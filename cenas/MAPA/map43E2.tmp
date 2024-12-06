@@ -1,0 +1,202 @@
+[gd_scene load_steps=19 format=3 uid="uid://bom3n40lvtdxs"]
+
+[ext_resource type="Script" path="res://scr/Mapas/mapa_testes_vidro.gd" id="1_qnxjo"]
+[ext_resource type="Texture2D" uid="uid://b3c50ywrscebs" path="res://assets/dust/de_dust2_-_cs_map_2.png" id="1_txq6a"]
+[ext_resource type="PackedScene" uid="uid://07p2s7y8ml1" path="res://cenas/PLAYER/player_testevidro.tscn" id="1_vypmi"]
+[ext_resource type="Shader" path="res://Material/shaders_scrs/vidro/mapa_testes_vidro.gdshader" id="2_8m1mw"]
+[ext_resource type="PackedScene" uid="uid://bjwsr0q01mn6o" path="res://cenas/OBJETOS/box_1.tscn" id="2_gja6a"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0qbfy"]
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0.278431, 0.333333, 0.411765, 1)
+
+[sub_resource type="Sky" id="Sky_0r2ph"]
+sky_material = SubResource("ProceduralSkyMaterial_0qbfy")
+
+[sub_resource type="Environment" id="Environment_1hpls"]
+background_mode = 2
+sky = SubResource("Sky_0r2ph")
+tonemap_mode = 2
+sdfgi_use_occlusion = true
+glow_enabled = true
+glow_normalized = true
+volumetric_fog_density = 0.1
+volumetric_fog_albedo = Color(0, 0, 0, 1)
+volumetric_fog_temporal_reprojection_enabled = false
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1fvpq"]
+albedo_texture = ExtResource("1_txq6a")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hd0fy"]
+albedo_texture = ExtResource("1_txq6a")
+uv1_scale = Vector3(10, 10, 10)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2l1ij"]
+render_priority = 0
+shader = ExtResource("2_8m1mw")
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_myt1g"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0kn68"]
+render_priority = 0
+shader = ExtResource("2_8m1mw")
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_myt1g")
+
+[sub_resource type="BoxMesh" id="BoxMesh_2rhe0"]
+size = Vector3(0, 3.8, 23)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_e56v1"]
+data = PackedVector3Array(0, 1.9, 11.5, 0, 1.9, 11.5, 0, -1.9, 11.5, 0, 1.9, 11.5, 0, -1.9, 11.5, 0, -1.9, 11.5, 0, 1.9, -11.5, 0, 1.9, -11.5, 0, -1.9, -11.5, 0, 1.9, -11.5, 0, -1.9, -11.5, 0, -1.9, -11.5, 0, 1.9, 11.5, 0, 1.9, -11.5, 0, -1.9, 11.5, 0, 1.9, -11.5, 0, -1.9, -11.5, 0, -1.9, 11.5, 0, 1.9, -11.5, 0, 1.9, 11.5, 0, -1.9, -11.5, 0, 1.9, 11.5, 0, -1.9, 11.5, 0, -1.9, -11.5, 0, 1.9, 11.5, 0, 1.9, 11.5, 0, 1.9, -11.5, 0, 1.9, 11.5, 0, 1.9, -11.5, 0, 1.9, -11.5, 0, -1.9, 11.5, 0, -1.9, 11.5, 0, -1.9, -11.5, 0, -1.9, 11.5, 0, -1.9, -11.5, 0, -1.9, -11.5)
+
+[sub_resource type="Animation" id="Animation_cwuny"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(10.1294, 1.92896, -4.94577)]
+}
+
+[sub_resource type="Animation" id="Animation_2llly"]
+resource_name = "girando"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(10.1294, 1.92896, -4.94577), Vector3(6.91626, 1.92896, -2.40062), Vector3(3.9123, 1.92896, -5.30041), Vector3(6.08066, 1.92896, -4.7795), Vector3(6.7262, 1.92896, -7.52793)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(1.14668, -3.36325, 1.14668), Vector3(3.14159, 3.14159, 3.14159), Vector3(6.28319, 1.35961, -1.65632), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qxkqk"]
+_data = {
+"RESET": SubResource("Animation_cwuny"),
+"girando": SubResource("Animation_2llly")
+}
+
+[node name="Mapa_testes_vidro" type="Node3D"]
+script = ExtResource("1_qnxjo")
+
+[node name="EV" type="Node3D" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="EV"]
+environment = SubResource("Environment_1hpls")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="EV"]
+transform = Transform3D(-4.37114e-08, -0.642788, 0.766044, 0, 0.766044, 0.642788, -1, 2.80971e-08, -3.34849e-08, 0, 27.4673, 0)
+
+[node name="static" type="Node3D" parent="."]
+
+[node name="cubo" type="CSGCombiner3D" parent="static"]
+use_collision = true
+
+[node name="cubo" type="CSGBox3D" parent="static/cubo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+size = Vector3(25, 5, 25)
+material = SubResource("StandardMaterial3D_1fvpq")
+
+[node name="cubo2" type="CSGBox3D" parent="static/cubo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+operation = 2
+size = Vector3(24, 5, 24)
+material = SubResource("StandardMaterial3D_hd0fy")
+
+[node name="vidro" type="CSGCombiner3D" parent="static"]
+use_collision = true
+
+[node name="vidro" type="CSGBox3D" parent="static/vidro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.75, 0)
+size = Vector3(0, 4.5, 24)
+
+[node name="vidro2" type="CSGBox3D" parent="static/vidro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.75, 0)
+operation = 2
+size = Vector3(0, 3.8, 23)
+material = SubResource("ShaderMaterial_2l1ij")
+
+[node name="vidro3" type="MeshInstance3D" parent="static/vidro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.75, 0)
+material_override = SubResource("ShaderMaterial_0kn68")
+mesh = SubResource("BoxMesh_2rhe0")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="static/vidro/vidro3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="static/vidro/vidro3/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_e56v1")
+
+[node name="Obj" type="Node3D" parent="."]
+
+[node name="box1" parent="Obj" node_paths=PackedStringArray("Player_hand") instance=ExtResource("2_gja6a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.22856, 2.52159, 8.67865)
+Player_hand = NodePath("../../Player/Nek/Head/Eyes/Camera3D/hand")
+
+[node name="boxEspelho" parent="Obj" node_paths=PackedStringArray("Player_hand", "Mirror_What") instance=ExtResource("2_gja6a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.50972, 2.67477, 0)
+Player_hand = NodePath("../../PlayerEspelho/Nek/Head/Eyes/Camera3D/hand")
+mirrored = true
+Mirror_What = NodePath("../box1")
+
+[node name="Cube" parent="Obj/boxEspelho" index="0"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="box2" parent="Obj" instance=ExtResource("2_gja6a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.1294, 1.92896, -4.94577)
+collision_layer = 128
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Obj/box2"]
+libraries = {
+"": SubResource("AnimationLibrary_qxkqk")
+}
+
+[node name="boxEspelho2" parent="Obj" node_paths=PackedStringArray("Mirror_What") instance=ExtResource("2_gja6a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.50972, 2.67477, 5.72187)
+collision_layer = 128
+mirrored = true
+Mirror_What = NodePath("../box2")
+
+[node name="Cube" parent="Obj/boxEspelho2" index="0"]
+transform = Transform3D(1, 0, -1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 0, 0, 0)
+
+[node name="Player" parent="." instance=ExtResource("1_vypmi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, 1)
+
+[node name="PlayerEspelho" parent="." node_paths=PackedStringArray("Mirror_What") instance=ExtResource("1_vypmi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, 1)
+mirrored = true
+Mirror_What = NodePath("../Player")
+
+[node name="Corpo" parent="PlayerEspelho" index="1"]
+transform = Transform3D(1, 0, -1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 0, 1, 0)
+
+[editable path="Obj/boxEspelho"]
+[editable path="Obj/boxEspelho/Interactable"]
+[editable path="Obj/boxEspelho2"]
+[editable path="Obj/boxEspelho2/Interactable"]
+[editable path="Player"]
+[editable path="Player/Nek/Head/Eyes/PlayerInteractor"]
+[editable path="PlayerEspelho"]
+[editable path="PlayerEspelho/Nek/Head/Eyes/PlayerInteractor"]

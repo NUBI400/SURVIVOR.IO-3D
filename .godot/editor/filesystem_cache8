@@ -1,0 +1,316 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1731359992
+icon.svg::CompressedTexture2D::4407177357460384179::1724360324::1726484142::1::::<><>::
+::res://addons/::1726484976
+::res://addons/simplegrasstextured/::1728566486
+about.gd::GDScript::-1::1724360324::0::1::::<>AcceptDialog<>::
+about.tscn::PackedScene::4911781892099929477::1724360324::0::1::::<><>::res://addons/simplegrasstextured/about.gd<>uid://cl74usvfymgvs::::res://addons/simplegrasstextured/materials/icon.material<>uid://cubr1a55brlfp::::res://addons/simplegrasstextured/sgt_icon_48.svg
+clear_all_confirmation_dialog.gd::GDScript::-1::1724360324::0::1::::<>ConfirmationDialog<>::
+clear_all_confirmation_dialog.tscn::PackedScene::6655298708346297599::1724360324::0::1::::<><>::res://addons/simplegrasstextured/clear_all_confirmation_dialog.gd
+global_parameters.gd::GDScript::-1::1724360324::0::1::::<>AcceptDialog<>::
+global_parameters.tscn::PackedScene::2458798723417736340::1724360324::0::1::::<><>::res://addons/simplegrasstextured/global_parameters.gd
+grass.gd::GDScript::-1::1724360324::0::1::::<>MultiMeshInstance3D<>::
+icon.svg::CompressedTexture2D::3674741696772618351::1724360324::1726484143::1::::<><>::
+plugin.cfg::TextFile::-1::1724360324::0::1::::<><>::
+plugin.gd::GDScript::-1::1724360324::0::1::::<>EditorPlugin<>::
+sgt_icon.svg::CompressedTexture2D::3674741696772618351::1724360324::1728566486::1::::<><>::
+sgt_icon_48.svg::CompressedTexture2D::6179761285128679357::1724360324::1728566486::1::::<><>::
+sgt_inspector.gd::GDScript::-1::1724360324::0::1::::<>EditorInspectorPlugin<>::
+singleton.gd::GDScript::-1::1724360324::0::1::::<>Node3D<>::
+singleton.tscn::PackedScene::2771945727575370787::1724360324::0::1::::<><>::res://addons/simplegrasstextured/singleton.gd<>res://addons/simplegrasstextured/shaders/distance.gdshader<>res://addons/simplegrasstextured/shaders/motion1.gdshader<>res://addons/simplegrasstextured/shaders/motion2.gdshader<>res://addons/simplegrasstextured/shaders/normal.gdshader<>uid://cho4etu1eahnx::::res://addons/simplegrasstextured/images/normal.png<>uid://m77dlrqfdeef::::res://addons/simplegrasstextured/images/normal_frame.png<>res://addons/simplegrasstextured/shaders/blur1.gdshader<>res://addons/simplegrasstextured/shaders/blur2.gdshader<>uid://bovwvrkiruiat::::res://addons/simplegrasstextured/images/motion_frame.png<>uid://dk6rqq2wmb45o::::res://addons/simplegrasstextured/images/motion.png
+toolbar.gd::GDScript::-1::1724360324::0::1::::<>Control<>::
+toolbar.tscn::PackedScene::8439958543240164824::1724360324::0::1::::<><>::res://addons/simplegrasstextured/toolbar.gd<>uid://cl74usvfymgvs::::res://addons/simplegrasstextured/materials/icon.material<>uid://bsmcpupaj02v8::::res://addons/simplegrasstextured/sgt_icon.svg<>uid://der2mmxtog2mt::::res://addons/simplegrasstextured/toolbar_menu.tscn<>uid://clm6vd2es8xm7::::res://addons/simplegrasstextured/images/sgt_icon_radius.svg<>uid://tqiak77omdnr::::res://addons/simplegrasstextured/images/sgt_icon_density.svg<>uid://d28dlfkm62t6e::::res://addons/simplegrasstextured/images/sgt_icon_distance.svg
+toolbar_menu.gd::GDScript::-1::1724360324::0::1::::<>MenuButton<>::
+toolbar_menu.tscn::PackedScene::7476773302474954695::1724360324::0::1::::<><>::res://addons/simplegrasstextured/toolbar_menu.gd
+toolbar_up.gd::GDScript::-1::1724360324::0::1::::<>Control<>::
+toolbar_up.tscn::PackedScene::2788704064382556614::1724360324::0::1::::<><>::res://addons/simplegrasstextured/toolbar_up.gd<>uid://bsmcpupaj02v8::::res://addons/simplegrasstextured/sgt_icon.svg<>uid://der2mmxtog2mt::::res://addons/simplegrasstextured/toolbar_menu.tscn
+::res://addons/simplegrasstextured/images/::1728566486
+icon_density.svg::CompressedTexture2D::1367104385270064023::1724360324::1726484143::1::::<><>::
+icon_distance.svg::CompressedTexture2D::9122687368553934006::1724360324::1726484143::1::::<><>::
+icon_radius.svg::CompressedTexture2D::5571611108387928316::1724360324::1726484143::1::::<><>::
+motion.png::CompressedTexture2D::7926207842513999046::1724360324::1726484143::1::::<><>::
+motion_frame.png::CompressedTexture2D::3413790611705667811::1724360324::1726484143::1::::<><>::
+normal.png::CompressedTexture2D::5294833527401528685::1724360324::1726484143::1::::<><>::
+normal_frame.png::CompressedTexture2D::910275117688840773::1724360324::1726484143::1::::<><>::
+pointer.png::CompressedTexture2D::2028199532254930808::1724360324::1726484143::1::::<><>::
+sgt_icon_density.svg::CompressedTexture2D::1367104385270064023::1724360324::1728566486::1::::<><>::
+sgt_icon_distance.svg::CompressedTexture2D::9122687368553934006::1724360324::1728566486::1::::<><>::
+sgt_icon_radius.svg::CompressedTexture2D::5571611108387928316::1724360324::1728566486::1::::<><>::
+wind_pattern.png::CompressedTexture2D::18393553257205938::1724360326::1726484143::1::::<><>::
+::res://addons/simplegrasstextured/materials/::1724360326
+grass.material::ShaderMaterial::8222375467503170076::1724360326::0::1::::<><>::res://addons/simplegrasstextured/shaders/grass.gdshader
+grass_unshaded.material::ShaderMaterial::3094928426551161515::1724360326::0::1::::<><>::res://addons/simplegrasstextured/shaders/grass_unshaded.gdshader
+icon.material::ShaderMaterial::5612776222323720372::1724360326::0::1::::<><>::
+position.material::ShaderMaterial::4894212141296346752::1724360326::0::1::::<><>::res://addons/simplegrasstextured/shaders/position.gdshader
+::res://addons/simplegrasstextured/shaders/::1724360326
+blur1.gdshader::Shader::-1::1724360326::0::1::::<><>::
+blur2.gdshader::Shader::-1::1724360326::0::1::::<><>::
+distance.gdshader::Shader::-1::1724360326::0::1::::<><>::
+grass.gdshader::Shader::-1::1724360326::0::1::::<><>::
+grass_unshaded.gdshader::Shader::-1::1724360326::0::1::::<><>::
+motion1.gdshader::Shader::-1::1724360326::0::1::::<><>::
+motion2.gdshader::Shader::-1::1724360326::0::1::::<><>::
+normal.gdshader::Shader::-1::1724360326::0::1::::<><>::
+position.gdshader::Shader::-1::1724360326::0::1::::<><>::
+::res://addons/simplegrasstextured/textures/::1726484143
+grassbushcc008.png::CompressedTexture2D::6821074585685753060::1724360326::1726484143::1::::<><>::
+::res://addons/virtual_joystick/::1728425020
+plugin.cfg::TextFile::-1::1726484976::0::1::::<><>::
+virtual_joystick.gd::GDScript::-1::1726484976::0::1::::VirtualJoystick<>Control<>::
+virtual_joystick_icon.png::CompressedTexture2D::260911808592511340::1726484977::1726484977::1::::<><>::
+virtual_joystick_instantiator.gd::GDScript::-1::1726484977::0::1::::<>Control<>::
+virtual_joystick_plugin.gd::GDScript::-1::1726484977::0::1::::<>EditorPlugin<>::
+virtual_joystick_scene.tscn::PackedScene::8038149555967335895::1728425020::0::1::::<><>::res://addons/virtual_joystick/virtual_joystick.gd<>uid://bm30au8mjfc2f::::res://addons/virtual_joystick/textures/joystick_base_outline.png<>uid://dt13r06u87fib::::res://addons/virtual_joystick/textures/joystick_tip_arrows.png
+::res://addons/virtual_joystick/previews/::1726484978
+CoverPreview.svg::CompressedTexture2D::6152960366156954719::1726484976::1726484977::1::::<><>::
+joystick_icon.png::CompressedTexture2D::1018714329171202501::1726484976::1726484977::1::::<><>::
+Logo.svg::CompressedTexture2D::6303265527220532157::1726484976::1726484977::1::::<><>::
+ShowcasePreview.png::CompressedTexture2D::710233138524447204::1726484976::1726484978::1::::<><>::
+::res://addons/virtual_joystick/test/::1726485611
+player.gd::GDScript::-1::1726485611::0::1::::<>Sprite2D<>::
+test.tscn::PackedScene::3566301953465693758::1726484976::0::1::::<><>::uid://dmr0fcamx7t56::::res://addons/virtual_joystick/virtual_joystick_scene.tscn<>uid://kq1h264n0gxs::::res://icon.svg<>res://addons/virtual_joystick/test/player.gd
+::res://addons/virtual_joystick/textures/::1726484977
+joystick_base_outline.png::CompressedTexture2D::3288008411285325467::1726484976::1726484977::1::::<><>::
+joystick_tip.png::CompressedTexture2D::3132432681801126628::1726484976::1726484977::1::::<><>::
+joystick_tip_arrows.png::CompressedTexture2D::8548255698028078709::1726484976::1726484977::1::::<><>::
+::res://assets/::1728469959
+black-white-details-moon-texture-concept.jpg::CompressedTexture2D::5027876559214973050::1724605422::1726484143::1::::<><>::
+cadeado_branco.png::CompressedTexture2D::5718201110946624213::1724476754::1726484142::1::::<><>::
+pngwing.com.png::CompressedTexture2D::5046944585743633050::1724607774::1726484142::1::::<><>::
+receba.png::CompressedTexture2D::5800363511074818633::1724607774::1726484142::1::::<><>::
+::res://assets/fonts/::1726484141
+Artesania Display.ttf::FontFile::8340666700453368858::1724360328::1726484141::1::::<><>::
+upheavtt.ttf::FontFile::6755335473578660422::1724368240::1726484141::1::::<><>::
+::res://assets/HUD ASSETS/::1728567659
+brancobrancoleite.png::CompressedTexture2D::6510771516845330080::1728567659::1728567659::1::::<><>::
+crosshair001.png::CompressedTexture2D::3034406870543870941::1724360328::1726484143::1::::<><>::
+crosshair020.png::CompressedTexture2D::167871247303934886::1724360330::1726484143::1::::<><>::
+crosshair046.png::CompressedTexture2D::1420488446457260718::1724360330::1726484143::1::::<><>::
+mira.png::CompressedTexture2D::8852438174957922961::1724360330::1726484143::1::::<><>::
+::res://assets/Modelos/::1728432548
+::res://assets/Modelos/ALIENFUDIDO2/::1726484213
+counterstrike_online_-_alien_boss_phobos.glb::PackedScene::6211588393315264967::1724595090::1726484213::1::::<><>::uid://chg25wuidaa6j::::res://assets/Modelos/ALIENFUDIDO2/counterstrike_online_-_alien_boss_phobos_0.png<>uid://cfb5wht38jw0c::::res://assets/Modelos/ALIENFUDIDO2/counterstrike_online_-_alien_boss_phobos_1.png<>uid://c3pikvo4sicq8::::res://assets/Modelos/ALIENFUDIDO2/counterstrike_online_-_alien_boss_phobos_2.png
+counterstrike_online_-_alien_boss_phobos_0.png::CompressedTexture2D::5278243658775913815::1724595092::1726484143::1::::<><>::
+counterstrike_online_-_alien_boss_phobos_1.png::CompressedTexture2D::5127711158910731332::1724595092::1726484143::1::::<><>::
+counterstrike_online_-_alien_boss_phobos_2.png::CompressedTexture2D::6769599375402799689::1724595092::1726484143::1::::<><>::
+::res://assets/Modelos/Caixa_bo2/::1726484214
+call_of_duty_black_ops_mystery_box.glb::PackedScene::6378495634397762818::1724689704::1726484214::1::::<><>::uid://bxfst1strwgt6::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_47.jpg<>uid://bsh2e8jjg8t6y::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_48.png<>uid://kt2nh1xg7864::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_49.png<>uid://dj4f77xygpif5::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_44.jpg<>uid://2sm72qnb0m0j::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_45.png<>uid://hd3rseys4ptt::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_46.png<>uid://dwhht46roehoc::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_41.jpg<>uid://bx2lygfqu5hc4::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_42.png<>uid://1h7xtnctt01p::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_43.png<>uid://dff7og8a51e1x::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_38.jpg<>uid://8cq1n1r6mm2i::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_39.png<>uid://nh3r072fyuw0::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_40.png<>uid://cviqijayq75ya::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_35.jpg<>uid://c570b1x3mh0yp::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_36.png<>uid://be1fwv2hlt600::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_37.png<>uid://b5vxgwdrn3lvu::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_32.jpg<>uid://ckqsyfj0nsf4b::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_33.png<>uid://cnncx82ekq4oh::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_34.png<>uid://bttobg76p8rb8::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_29.jpg<>uid://bvwru61urbejd::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_30.png<>uid://kxw58yg4rslr::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_31.png<>uid://bb1sqetl4trh8::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_26.jpg<>uid://cvevt2rp1nj2f::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_27.png<>uid://dhtc4kx5jwhfm::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_28.png<>uid://cvmyelgcwhj3y::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_23.jpg<>uid://cfjihqpsfm8qg::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_24.png<>uid://f7xjjv84qanl::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_25.png<>uid://b7yx0salal6yo::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_20.jpg<>uid://d2n7uvh3q1584::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_21.png<>uid://bk031c55vvxxk::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_22.png<>uid://q0e85et0eoqy::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_17.jpg<>uid://bd5ninjvxuu0d::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_18.png<>uid://dqdpmhaalufxr::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_19.png<>uid://ctcbdnai53xu2::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_13.jpg<>uid://s6j0f7kf3vfj::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_14.png<>uid://bsputuj0ij2ib::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_15.jpg<>uid://bkptcdj0k2qro::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_16.png<>uid://b507jldyd6bc::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_10.jpg<>uid://qx33lqte0tc4::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_11.png<>uid://byiuepcsr7w6e::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_12.png<>uid://ccevfug76xbil::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_6.jpg<>uid://bwkea1rt2ixbt::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_7.png<>uid://bb811r5d6rmie::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_8.jpg<>uid://boq48v7uho5tv::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_9.png<>uid://73g8o22l7472::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_3.jpg<>uid://dowrtpi5fivax::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_4.png<>uid://b14y0oj6af61v::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_5.png<>uid://dnfnf1yq3iuc1::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_0.jpg<>uid://xx7aqwa3lklc::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_1.png<>uid://dirouii4mimdl::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_2.png
+call_of_duty_black_ops_mystery_box_0.jpg::CompressedTexture2D::8082838560466643118::1724689856::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_1.png::CompressedTexture2D::1663767910183807672::1724689856::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_2.png::CompressedTexture2D::7756753409658635073::1724689858::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_3.jpg::CompressedTexture2D::2304269584965540127::1724689858::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_4.png::CompressedTexture2D::8188389093141065147::1724689858::1726484144::1::::<><>::
+call_of_duty_black_ops_mystery_box_5.png::CompressedTexture2D::4272700176462567245::1724689858::1726484144::1::::<><>::
+call_of_duty_black_ops_mystery_box_6.jpg::CompressedTexture2D::4922761612728220999::1724689858::1726484144::1::::<><>::
+call_of_duty_black_ops_mystery_box_7.png::CompressedTexture2D::3951463282009951137::1724689860::1726484144::1::::<><>::
+call_of_duty_black_ops_mystery_box_8.jpg::CompressedTexture2D::2526360005088061340::1724689860::1726484144::1::::<><>::
+call_of_duty_black_ops_mystery_box_9.png::CompressedTexture2D::3403915416022342643::1724689860::1726484144::1::::<><>::
+call_of_duty_black_ops_mystery_box_10.jpg::CompressedTexture2D::133695736355475928::1724689860::1726484144::1::::<><>::
+call_of_duty_black_ops_mystery_box_11.png::CompressedTexture2D::1172252867922036373::1724689860::1726484144::1::::<><>::
+call_of_duty_black_ops_mystery_box_12.png::CompressedTexture2D::4088690227851005898::1724689862::1726484144::1::::<><>::
+call_of_duty_black_ops_mystery_box_13.jpg::CompressedTexture2D::6110624909599671263::1724689862::1726484144::1::::<><>::
+call_of_duty_black_ops_mystery_box_14.png::CompressedTexture2D::1327986306155609463::1724689862::1726484144::1::::<><>::
+call_of_duty_black_ops_mystery_box_15.jpg::CompressedTexture2D::3682034870945307045::1724689862::1726484144::1::::<><>::
+call_of_duty_black_ops_mystery_box_16.png::CompressedTexture2D::3120432153458313576::1724689862::1726484144::1::::<><>::
+call_of_duty_black_ops_mystery_box_17.jpg::CompressedTexture2D::1174934324006517376::1724689862::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_18.png::CompressedTexture2D::2659722852178675989::1724689864::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_19.png::CompressedTexture2D::8289409234647299715::1724689864::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_20.jpg::CompressedTexture2D::4683450827809384306::1724689864::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_21.png::CompressedTexture2D::9083177514854194311::1724689864::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_22.png::CompressedTexture2D::3141665223146718892::1724689864::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_23.jpg::CompressedTexture2D::6273044554981849036::1724689866::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_24.png::CompressedTexture2D::5142864086233066202::1724689866::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_25.png::CompressedTexture2D::418417375988643573::1724689866::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_26.jpg::CompressedTexture2D::2511405067492956891::1724689866::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_27.png::CompressedTexture2D::6256375026842337383::1724689868::1726484143::1::::<><>::
+call_of_duty_black_ops_mystery_box_28.png::CompressedTexture2D::7689980918021406226::1724689868::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_29.jpg::CompressedTexture2D::3760084079839189599::1724689868::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_30.png::CompressedTexture2D::3906872284756463709::1724689868::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_31.png::CompressedTexture2D::750760243039624167::1724689868::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_32.jpg::CompressedTexture2D::4536846292205390874::1724689870::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_33.png::CompressedTexture2D::5508895890428958895::1724689870::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_34.png::CompressedTexture2D::5712297527904787639::1724689870::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_35.jpg::CompressedTexture2D::6264308337876139048::1724689870::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_36.png::CompressedTexture2D::6946087877696291035::1724689870::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_37.png::CompressedTexture2D::2721193897314128207::1724689872::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_38.jpg::CompressedTexture2D::7522496469082723467::1724689872::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_39.png::CompressedTexture2D::2321379221871760702::1724689872::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_40.png::CompressedTexture2D::928637409618583877::1724689872::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_41.jpg::CompressedTexture2D::8718327776285360090::1724689874::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_42.png::CompressedTexture2D::4057213356320612205::1724689874::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_43.png::CompressedTexture2D::1841345614038747823::1724689874::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_44.jpg::CompressedTexture2D::7851191046434890496::1724689874::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_45.png::CompressedTexture2D::1933044770558423299::1724689874::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_46.png::CompressedTexture2D::499246425737432541::1724689876::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_47.jpg::CompressedTexture2D::4012214206392580445::1724689876::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_48.png::CompressedTexture2D::3665918763028467914::1724689876::1726484142::1::::<><>::
+call_of_duty_black_ops_mystery_box_49.png::CompressedTexture2D::742774596715613311::1724689876::1726484141::1::::<><>::
+::res://assets/Modelos/Cowboy/::1728434554
+cowboy.glb::PackedScene::5271818173441779403::1728434551::1728434553::1::::<><>::uid://dlg01e0xgd276::::res://assets/Modelos/Cowboy/cowboy_0.png
+cowboy_0.png::CompressedTexture2D::7945290202849400931::1728434552::1728434554::1::::<><>::
+::res://assets/Modelos/MP7/::1726484213
+MP7.glb::PackedScene::1022837208040353769::1724360336::1726484213::1::::<><>::
+::res://assets/Modelos/revolver/::1726484216
+Magnun.glb::PackedScene::6552616607725639018::1724360336::1726484215::1::::<><>::
+revolver_bala.glb::PackedScene::3977791946833181226::1724360336::1726484216::1::::<><>::
+::res://assets/Modelos/ROBO/::1726484218
+light_assault_mech.glb::PackedScene::24232142449806842::1724594528::1726484218::1::::<><>::uid://dl2qrwm36x0e0::::res://assets/Modelos/ROBO/light_assault_mech_0.png<>uid://uefbjo35wyuf::::res://assets/Modelos/ROBO/light_assault_mech_1.png<>uid://77ymd3dw3cxn::::res://assets/Modelos/ROBO/light_assault_mech_2.png<>uid://dxngu3yu4ywyf::::res://assets/Modelos/ROBO/light_assault_mech_3.png
+light_assault_mech_0.png::CompressedTexture2D::7988080536203827501::1724594528::1726484142::1::::<><>::
+light_assault_mech_1.png::CompressedTexture2D::1412340250185212189::1724594534::1726484142::1::::<><>::
+light_assault_mech_2.png::CompressedTexture2D::2313581922891586371::1724594540::1726484142::1::::<><>::
+light_assault_mech_3.png::CompressedTexture2D::8800843892069063581::1724594542::1726484143::1::::<><>::
+::res://assets/Modelos/shotgun/::1726484215
+lanterna.glb::PackedScene::6513202711686899695::1724360336::1726484215::1::::<><>::
+Muniçãoshotgun.glb::PackedScene::2234597657014561966::1724360336::1726484215::1::::<><>::
+ShotGun_separada.glb::PackedScene::4178987976006394487::1724360336::1726484215::1::::<><>::uid://cbipdxcatbnhm::::res://assets/Modelos/shotgun/ShotGun_separada_madera.jpg
+ShotGun_separada_madera.jpg::CompressedTexture2D::4860462556482031462::1724360336::1726484142::1::::<><>::
+::res://assets/sounds/::1726484141
+passorobofodase.mp3::AudioStreamMP3::7329137684405426597::1724607130::1726484141::1::::<><>::
+som do espaço seloko.mp3::AudioStreamMP3::7107913829456469314::1724607130::1726484141::1::::<><>::
+::res://cenas/::1724360338
+::res://cenas/CENAS COD ZOMBIES/::1731358416
+bullet.tscn::PackedScene::478701395781178454::1731358416::0::1::::<><>::
+bullet_debug.tscn::PackedScene::8391522609972364508::1724360336::0::1::::<><>::uid://uidicgaojgdi::::res://assets/HUD ASSETS/crosshair046.png<>res://scr/SCR COD ZOMBIES/bullet_debug.gd
+bullet_enemy.tscn::PackedScene::6711998883426427833::1724606312::0::1::::<><>::res://scr/Inimigos/bullet_enemy.gd
+bullet_revolver.tscn::PackedScene::3051413243305957936::1724527904::0::1::::<><>::res://scr/SCR COD ZOMBIES/armas code/bullet.gd
+pngwing.com.png::CompressedTexture2D::7307526722172178411::1724606978::1726484142::1::::<><>::
+::res://cenas/Inimigos/::1731360001
+Inimigo_long_rang.tscn::PackedScene::5424401283664571917::1724541496::0::1::::<><>::res://scr/Inimigos/ZUmbi_long_rang.gd<>uid://ckdslv1fuxe7::::res://assets/zombie/zombie_0.png
+Inimigo_padrao.tscn::PackedScene::7103243948359030320::1731360001::0::1::::<><>::res://scr/Inimigos/ZUmbi.gd<>uid://chg25wuidaa6j::::res://assets/Modelos/ALIENFUDIDO2/counterstrike_online_-_alien_boss_phobos_0.png<>uid://cfb5wht38jw0c::::res://assets/Modelos/ALIENFUDIDO2/counterstrike_online_-_alien_boss_phobos_1.png<>uid://c3pikvo4sicq8::::res://assets/Modelos/ALIENFUDIDO2/counterstrike_online_-_alien_boss_phobos_2.png
+Inimigo_tank.tscn::PackedScene::7454609800971759734::1731360001::0::1::::<><>::res://scr/Inimigos/ZUmbi.gd<>uid://chg25wuidaa6j::::res://assets/Modelos/ALIENFUDIDO2/counterstrike_online_-_alien_boss_phobos_0.png<>uid://cfb5wht38jw0c::::res://assets/Modelos/ALIENFUDIDO2/counterstrike_online_-_alien_boss_phobos_1.png<>uid://c3pikvo4sicq8::::res://assets/Modelos/ALIENFUDIDO2/counterstrike_online_-_alien_boss_phobos_2.png
+zumbi_spawn.tscn::PackedScene::512145222691727094::1724360338::0::1::::<><>::res://scr/Inimigos/Zumbi spawn.gd
+::res://cenas/interect_system/::1724360338
+interactable.tscn::PackedScene::5108056680382151593::1724360338::0::1::::<><>::res://scr/Interactot_system/interactable.gd
+interactor.tscn::PackedScene::853923392246503877::1724360338::0::1::::<><>::res://scr/Interactot_system/interactor.gd
+player_interactor.tscn::PackedScene::4767949441001212629::1724360338::0::1::::<><>::uid://mfv81q65hsph::::res://cenas/interect_system/interactor.tscn<>res://scr/Interactot_system/PlayerInteractor.gd
+::res://cenas/Itens/::1731352520
+lanterna.tscn::PackedScene::3077236433346655924::1724360338::0::1::::<><>::res://Material/shaders_scrs/itens/itens_light.gdshader<>uid://j6b6uf4g3qnq::::res://Material/shaders_scrs/outline/outline.tres<>uid://ce1m7g8530b58::::res://cenas/interect_system/interactable.tscn
+magnun_PRESANAPAREDE.tscn::PackedScene::8406634709744675725::1724470638::0::1::::<><>::res://scr/SCR COD ZOMBIES/Weapon_Pick_Up_WALLGUNS.gd<>uid://ce1m7g8530b58::::res://cenas/interect_system/interactable.tscn
+magnun_solta.tscn::PackedScene::2293688004563764327::1724360338::0::1::::<><>::res://scr/SCR COD ZOMBIES/Weapon_Pick_Up.gd<>uid://ce1m7g8530b58::::res://cenas/interect_system/interactable.tscn
+medkit.tscn::PackedScene::5684464511749695346::1724360338::0::1::::<><>::res://scr/SCR COD ZOMBIES/Weapon_Pick_Up_WALLGUNS.gd<>uid://b5nhg86wyns0v::::res://assets/Modelos/medkit/medikit_0.jpg<>uid://cyrxev5md2cgb::::res://assets/Modelos/medkit/medikit_1.png<>uid://c4hwsefrmnfol::::res://assets/Modelos/medkit/medikit_2.png<>uid://ce1m7g8530b58::::res://cenas/interect_system/interactable.tscn
+mp7.tscn::PackedScene::7211062591624030797::1724360338::0::1::::<><>::
+mp_7_PRESANAPAREDE.tscn::PackedScene::6913254068627721382::1731352520::0::1::::<><>::res://scr/SCR COD ZOMBIES/Weapon_Pick_Up_WALLGUNS.gd<>uid://ce1m7g8530b58::::res://cenas/interect_system/interactable.tscn
+mp_7_solta.tscn::PackedScene::3662074268521994765::1724360338::0::1::::<><>::res://scr/SCR COD ZOMBIES/Weapon_Pick_Up.gd<>uid://ce1m7g8530b58::::res://cenas/interect_system/interactable.tscn
+shot_gun.tscn::PackedScene::3865858039017772442::1724360338::0::1::::<><>::uid://cbipdxcatbnhm::::res://assets/Modelos/shotgun/ShotGun_separada_madera.jpg<>uid://63pq5poont2e::::res://assets/Modelos/shotgun/Muniçãoshotgun.glb
+shot_gun_PRESANAPAREDE.tscn::PackedScene::4349638957632695233::1724360338::0::1::::<><>::res://scr/SCR COD ZOMBIES/Weapon_Pick_Up_WALLGUNS.gd<>uid://cbipdxcatbnhm::::res://assets/Modelos/shotgun/ShotGun_separada_madera.jpg<>uid://63pq5poont2e::::res://assets/Modelos/shotgun/Muniçãoshotgun.glb<>uid://ce1m7g8530b58::::res://cenas/interect_system/interactable.tscn
+shot_gun_solta.tscn::PackedScene::3923517856856047270::1724360338::0::1::::<><>::uid://cbipdxcatbnhm::::res://assets/Modelos/shotgun/ShotGun_separada_madera.jpg<>res://scr/SCR COD ZOMBIES/Weapon_Pick_Up.gd<>uid://63pq5poont2e::::res://assets/Modelos/shotgun/Muniçãoshotgun.glb<>uid://ce1m7g8530b58::::res://cenas/interect_system/interactable.tscn
+::res://cenas/MAPA/::1731360000
+survivor_io_3d.tscn::PackedScene::6501217642122101427::1731360000::0::1::::<><>::res://scr/Mapas/survivor_io_3d.gd<>uid://c8g4ni43sa473::::res://cenas/Inimigos/Inimigo_padrao.tscn<>res://scr/OBJETOS/target_collision.gd<>uid://dehclmo6uswos::::res://cenas/Inimigos/Inimigo_tank.tscn<>uid://c8jekjpjurmsg::::res://assets/sounds/som do espaço seloko.mp3<>uid://bej2unxx7vutf::::res://cenas/OBJETOS/loja.tscn<>uid://cdvsnls4f6aas::::res://assets/black-white-details-moon-texture-concept.jpg<>uid://o5jwn6e00phu::::res://cenas/PLAYER/player_robo.tscn
+visual.tscn::PackedScene::807062364166203952::1724360338::0::1::::<><>::
+::res://cenas/OBJETOS/::1731360003
+box_1.tscn::PackedScene::3064661190362629504::1724360338::0::1::::<><>::uid://dxsynf14s3j6x::::res://assets/Modelos/Boxes/cardboard_box1_Box_21-256x256.png<>res://scr/OBJETOS/fisica_target.gd<>uid://j6b6uf4g3qnq::::res://Material/shaders_scrs/outline/outline.tres<>uid://ce1m7g8530b58::::res://cenas/interect_system/interactable.tscn
+caixabo2.tscn::PackedScene::245111895007398866::1724690190::0::1::::<><>::uid://dj4f77xygpif5::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_44.jpg<>uid://2sm72qnb0m0j::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_45.png<>uid://hd3rseys4ptt::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_46.png<>uid://dff7og8a51e1x::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_38.jpg<>uid://8cq1n1r6mm2i::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_39.png<>uid://nh3r072fyuw0::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_40.png<>uid://bb1sqetl4trh8::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_26.jpg<>uid://cvevt2rp1nj2f::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_27.png<>uid://dhtc4kx5jwhfm::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_28.png<>uid://b7yx0salal6yo::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_20.jpg<>uid://d2n7uvh3q1584::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_21.png<>uid://bk031c55vvxxk::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_22.png<>uid://q0e85et0eoqy::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_17.jpg<>uid://bd5ninjvxuu0d::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_18.png<>uid://dqdpmhaalufxr::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_19.png<>uid://ccevfug76xbil::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_6.jpg<>uid://bwkea1rt2ixbt::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_7.png<>uid://bb811r5d6rmie::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_8.jpg<>uid://boq48v7uho5tv::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_9.png<>uid://73g8o22l7472::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_3.jpg<>uid://dowrtpi5fivax::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_4.png<>uid://b14y0oj6af61v::::res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_5.png
+loja.gdshader::Shader::-1::1724637678::0::1::::<><>::
+loja.tscn::PackedScene::2687431252137241123::1731360003::0::1::::<><>::res://scr/OBJETOS/loja.gd<>uid://cc7ldkgurbhax::::res://cenas/PLAYER/LOJA_UI.tscn<>uid://dqy7sn3qq2e5::::res://cenas/OBJETOS/caixabo2.tscn
+::res://cenas/PLAYER/::1731360003
+alien.tscn::PackedScene::181960454089988232::1724637616::0::1::::<><>::uid://chg25wuidaa6j::::res://assets/Modelos/ALIENFUDIDO2/counterstrike_online_-_alien_boss_phobos_0.png<>uid://cfb5wht38jw0c::::res://assets/Modelos/ALIENFUDIDO2/counterstrike_online_-_alien_boss_phobos_1.png<>uid://c3pikvo4sicq8::::res://assets/Modelos/ALIENFUDIDO2/counterstrike_online_-_alien_boss_phobos_2.png
+cowboy.tscn::PackedScene::2401712952812823142::1728436516::0::1::::<><>::uid://dlg01e0xgd276::::res://assets/Modelos/Cowboy/cowboy_0.png
+LOJA_UI.tscn::PackedScene::4979952922528127051::1731358416::0::1::::<><>::res://scr/Player/UI/Loja_UI.gd<>uid://djby2hlfa2sq4::::res://Material/Thema_UI_loja.tres<>res://Material/LOJA_UI.gdshader<>uid://c3ilng4crv551::::res://assets/fonts/upheavtt.ttf<>uid://d03h4wsnjpeoe::::res://cenas/PLAYER/loja/loja_arma.tscn<>uid://dpomnn2ujxqtx::::res://cenas/PLAYER/loja/comprar_buffs.tscn<>res://cenas/PLAYER/loja/arma_visual.gd<>res://cenas/PLAYER/loja/upegrades.gd
+player.tscn::PackedScene::304833902382590459::1728436516::0::1::::<><>::res://scr/Player/Player.gd<>uid://cpj0tcne0qshc::::res://Material/shaders_scrs/motion_line_shaders/motion_line.tres<>uid://jnw7a33vmv5j::::res://Material/player_empe.tres<>res://scr/SCR COD ZOMBIES/HUD.gd<>uid://uidicgaojgdi::::res://assets/HUD ASSETS/crosshair046.png<>uid://dyegmmcplcwij::::res://assets/HUD ASSETS/mira.png<>res://scr/SCR COD ZOMBIES/Weapons_Manager.gd<>uid://wyublodn8rbe::::res://scr/SCR COD ZOMBIES/weapon_resources/magnun.tres<>uid://b86vov4y0wslx::::res://cenas/interect_system/player_interactor.tscn<>res://scr/SCR COD ZOMBIES/weapon_resource.gd<>uid://bvcwd8mirwspu::::res://cenas/Itens/shot_gun.tscn<>uid://s37bkx85cptx::::res://scr/SCR COD ZOMBIES/weapon_resources/shotgun.tres<>uid://h1hucjlqci52::::res://scr/SCR COD ZOMBIES/weapon_resources/MP7.tres<>uid://da0dfak3s3qh6::::res://cenas/Itens/mp7.tscn
+player_SURVIVOR_IO_cowboy.tscn::PackedScene::3223552626094786219::1728568086::0::1::::<><>::uid://dmr0fcamx7t56::::res://addons/virtual_joystick/virtual_joystick_scene.tscn<>res://scr/SCR COD ZOMBIES/HUD.gd<>uid://cov0e0mgya5xd::::res://assets/receba.png<>uid://cd51o7ufskxfe::::res://assets/pngwing.com.png<>uid://c3ilng4crv551::::res://assets/fonts/upheavtt.ttf<>res://scr/Player/UI/tempo.gd<>res://scr/Player/UI/Debug_UI.gd<>uid://dyegmmcplcwij::::res://assets/HUD ASSETS/mira.png<>uid://uidicgaojgdi::::res://assets/HUD ASSETS/crosshair046.png<>uid://cpj0tcne0qshc::::res://Material/shaders_scrs/motion_line_shaders/motion_line.tres<>uid://dlg01e0xgd276::::res://assets/Modelos/Cowboy/cowboy_0.png<>uid://b86vov4y0wslx::::res://cenas/interect_system/player_interactor.tscn<>res://scr/SCR COD ZOMBIES/Survivor_Weapons_Manager.gd<>res://scr/SCR COD ZOMBIES/weapon_resource.gd<>uid://wyublodn8rbe::::res://scr/SCR COD ZOMBIES/weapon_resources/magnun.tres<>uid://h1hucjlqci52::::res://scr/SCR COD ZOMBIES/weapon_resources/MP7.tres<>uid://s37bkx85cptx::::res://scr/SCR COD ZOMBIES/weapon_resources/shotgun.tres<>uid://bvcwd8mirwspu::::res://cenas/Itens/shot_gun.tscn<>uid://da0dfak3s3qh6::::res://cenas/Itens/mp7.tscn
+player_robo.tscn::PackedScene::1045161614863691606::1731360019::0::1::::<><>::res://scr/Player/Player_SURVIVOR_IO.gd<>uid://dmr0fcamx7t56::::res://addons/virtual_joystick/virtual_joystick_scene.tscn<>res://scr/SCR COD ZOMBIES/HUD.gd<>uid://cy04pqy0ior3u::::res://assets/HUD ASSETS/brancobrancoleite.png<>uid://c3ilng4crv551::::res://assets/fonts/upheavtt.ttf<>res://scr/Player/UI/tempo.gd<>res://scr/Player/UI/Debug_UI.gd<>uid://dyegmmcplcwij::::res://assets/HUD ASSETS/mira.png<>uid://uidicgaojgdi::::res://assets/HUD ASSETS/crosshair046.png<>uid://cpj0tcne0qshc::::res://Material/shaders_scrs/motion_line_shaders/motion_line.tres<>uid://dl2qrwm36x0e0::::res://assets/Modelos/ROBO/light_assault_mech_0.png<>uid://77ymd3dw3cxn::::res://assets/Modelos/ROBO/light_assault_mech_2.png<>uid://uefbjo35wyuf::::res://assets/Modelos/ROBO/light_assault_mech_1.png<>uid://dxngu3yu4ywyf::::res://assets/Modelos/ROBO/light_assault_mech_3.png<>uid://b86vov4y0wslx::::res://cenas/interect_system/player_interactor.tscn<>res://scr/SCR COD ZOMBIES/Survivor_Weapons_Manager.gd<>res://scr/SCR COD ZOMBIES/weapon_resource.gd<>uid://wyublodn8rbe::::res://scr/SCR COD ZOMBIES/weapon_resources/magnun.tres<>uid://h1hucjlqci52::::res://scr/SCR COD ZOMBIES/weapon_resources/MP7.tres<>uid://s37bkx85cptx::::res://scr/SCR COD ZOMBIES/weapon_resources/shotgun.tres<>uid://bvcwd8mirwspu::::res://cenas/Itens/shot_gun.tscn<>uid://da0dfak3s3qh6::::res://cenas/Itens/mp7.tscn
+robo_model.tscn::PackedScene::2992953875598891314::1724606264::0::1::::<><>::uid://dl2qrwm36x0e0::::res://assets/Modelos/ROBO/light_assault_mech_0.png<>uid://77ymd3dw3cxn::::res://assets/Modelos/ROBO/light_assault_mech_2.png<>uid://uefbjo35wyuf::::res://assets/Modelos/ROBO/light_assault_mech_1.png<>uid://dxngu3yu4ywyf::::res://assets/Modelos/ROBO/light_assault_mech_3.png
+::res://cenas/PLAYER/loja/::1731358396
+arma_visual.gd::GDScript::-1::1731358092::0::1::::<>Control<>::
+comprar_buffs.gd::GDScript::-1::1728470810::0::1::::<>Button<>::
+comprar_buffs.tscn::PackedScene::8241748538875516773::1724524732::0::1::::<><>::uid://djby2hlfa2sq4::::res://Material/Thema_UI_loja.tres<>res://cenas/PLAYER/loja/comprar_buffs.gd
+loja_arma.gd::GDScript::-1::1731358396::0::1::::<>Button<>::
+loja_arma.tscn::PackedScene::8972263710039858584::1731355689::0::1::::<><>::uid://djby2hlfa2sq4::::res://Material/Thema_UI_loja.tres<>res://cenas/PLAYER/loja/loja_arma.gd<>uid://cnp664aiuxu10::::res://assets/cadeado_branco.png
+upegrades.gd::GDScript::-1::1731356804::0::1::::<>Control<>::
+::res://Material/::1731352394
+circle.gdshader::Shader::-1::1724637678::0::1::::<><>::
+LOJA_UI.gdshader::Shader::-1::1724637678::0::1::::<><>::
+player_empe.tres::CapsuleMesh::659929467346162953::1724360340::0::1::::<><>::
+Thema_UI_loja.tres::Theme::7794531830722041021::1731352394::0::1::::<><>::uid://c3ilng4crv551::::res://assets/fonts/upheavtt.ttf
+::res://Material/shaders_scrs/::1724594380
+::res://Material/shaders_scrs/itens/::1724360340
+itens_light.gdshader::Shader::-1::1724360340::0::1::::<><>::
+::res://Material/shaders_scrs/motion_line_shaders/::1724360340
+motion_line.gdshader::Shader::-1::1724360340::0::1::::<><>::
+motion_line.tres::ShaderMaterial::5845805401991538184::1724360340::0::1::::<><>::res://Material/shaders_scrs/motion_line_shaders/motion_line.gdshader
+::res://Material/shaders_scrs/outline/::1724360340
+outline.tres::StandardMaterial3D::695812439239752490::1724360340::0::1::::<><>::
+outline_teste.gdshader::Shader::-1::1724360340::0::1::::<><>::
+outline_teste.tres::StandardMaterial3D::8261613125819095827::1724360340::0::1::::<><>::
+::res://Material/shaders_scrs/sky/::1724360340
+sky.gdshader::Shader::-1::1724360340::0::1::::<><>::
+sky.tres::ShaderMaterial::8346935617105056078::1724360340::0::1::::<><>::res://Material/shaders_scrs/sky/sky.gdshader
+::res://scr/::1731359912
+Global.gd::GDScript::-1::1731359502::0::1::::<>Node<>::
+Screan_shake.gd::GDScript::-1::1731359912::0::1::::<>Node<>::
+::res://scr/Inimigos/::1731358957
+base_inimigo.gd::GDScript::-1::1731358957::0::1::::<>CharacterBody3D<>::
+bullet_enemy.gd::GDScript::-1::1724539864::0::1::::<>RigidBody3D<>::
+Zumbi spawn.gd::GDScript::-1::1724360340::0::1::::<>Node3D<>::
+ZUmbi.gd::GDScript::-1::1724603424::0::1::::<>CharacterBody3D<>::
+ZUmbi_long_rang.gd::GDScript::-1::1724541384::0::1::::<>CharacterBody3D<>::
+::res://scr/Interactot_system/::1724360340
+interactable.gd::GDScript::-1::1724360340::0::1::::Interactable<>Area3D<>::
+interactor.gd::GDScript::-1::1724360340::0::1::::Interactor<>Area3D<>::
+PlayerInteractor.gd::GDScript::-1::1724360340::0::1::::<>Interactor<>::
+::res://scr/ITENS/::1724360340
+lanterna_usavel.gd::GDScript::-1::1724360340::0::1::::<>Node3D<>::
+shot_gun.gd::GDScript::-1::1724360340::0::1::::<>Node3D<>::
+::res://scr/Mapas/::1731359439
+survivor_io_3d.gd::GDScript::-1::1731359439::0::1::::<>Node3D<>::
+::res://scr/OBJETOS/::1731355069
+fisica_target.gd::GDScript::-1::1724360340::0::1::::<>RigidBody3D<>::
+loja.gd::GDScript::-1::1731355069::0::1::::<>StaticBody3D<>::
+porta_fia_da_puta_com_animação.gd::GDScript::-1::1724360340::0::1::::<>Node3D<>::
+target_collision.gd::GDScript::-1::1724360340::0::1::::<>Node<>::
+::res://scr/Player/::1731359998
+Player.gd::GDScript::-1::1724360340::0::1::::<>CharacterBody3D<>::
+Player_SURVIVOR_IO.gd::GDScript::-1::1731359998::0::1::::<>CharacterBody3D<>::
+::res://scr/Player/UI/::1731353596
+Debug_UI.gd::GDScript::-1::1724476990::0::1::::<>Control<>::
+Loja_UI.gd::GDScript::-1::1728471484::0::1::::<>Control<>::
+tempo.gd::GDScript::-1::1731353596::0::1::::<>RichTextLabel<>::
+::res://scr/SCR COD ZOMBIES/::1731356792
+bullet_debug.gd::GDScript::-1::1724360340::0::1::::<>Sprite3D<>::
+HUD.gd::GDScript::-1::1731356792::0::1::::<>CanvasLayer<>::
+Survivor_Weapons_Manager.gd::GDScript::-1::1731354778::0::1::::<>Node3D<>::
+Weapons_Manager.gd::GDScript::-1::1724360342::0::1::::<>Node3D<>::
+Weapon_Pick_Up.gd::GDScript::-1::1724360340::0::1::::<>RigidBody3D<>::
+Weapon_Pick_Up_WALLGUNS.gd::GDScript::-1::1728569747::0::1::::<>StaticBody3D<>::
+weapon_resource.gd::GDScript::-1::1724360342::0::1::::Weapon_Resource<>Resource<>::
+::res://scr/SCR COD ZOMBIES/armas code/::1724360342
+bullet.gd::GDScript::-1::1724360342::0::1::::<>RigidBody3D<>::
+::res://scr/SCR COD ZOMBIES/Projectiles/::1724360342
+Projectile.gd::GDScript::-1::1724360342::0::1::::<>Node3D<>::
+shotgun_projectile.gd::GDScript::-1::1724360342::0::1::::<>Projectile<>::
+SURVIVOR_IO_Projectile.gd::GDScript::-1::1724360342::0::1::::Projectile<>Node3D<>::
+::res://scr/SCR COD ZOMBIES/Secondary_Fire_Scripts/::1724360342
+ADS.tres::Resource/SecondaryFireResource::8289367044326992373::1724360342::0::1::::<><>::res://scr/SCR COD ZOMBIES/Secondary_Fire_Scripts/secondar_fire_Resource.gd
+secondar_fire_Resource.gd::GDScript::-1::1724360342::0::1::::SecondaryFireResource<>Resource<>::
+::res://scr/SCR COD ZOMBIES/Spawnable_Objects/::1724360342
+::res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/::1731360003
+basic_hitscan_projectile.tscn::PackedScene::7137602992721275182::1724360342::0::1::::<><>::res://scr/SCR COD ZOMBIES/Projectiles/Projectile.gd
+basic_rigid_body_projectile.tscn::PackedScene::5484670366566300826::1724535254::0::1::::<><>::res://scr/SCR COD ZOMBIES/Projectiles/Projectile.gd<>uid://g25e3hdxhd87::::res://cenas/CENAS COD ZOMBIES/bullet.tscn
+shotgun_projectile.tscn::PackedScene::6028813264038974523::1724360342::0::1::::<><>::res://scr/SCR COD ZOMBIES/Projectiles/shotgun_projectile.gd
+SURVIVOR_IO_basic_rigid_body_projectile.tscn::PackedScene::1667260979588641663::1731358416::0::1::::<><>::res://scr/SCR COD ZOMBIES/Projectiles/SURVIVOR_IO_Projectile.gd<>uid://g25e3hdxhd87::::res://cenas/CENAS COD ZOMBIES/bullet.tscn
+SURVIVOR_IO_MP7_projectile.tscn::PackedScene::3958046899764442857::1731360003::0::1::::<><>::res://scr/SCR COD ZOMBIES/Projectiles/SURVIVOR_IO_Projectile.gd<>uid://g25e3hdxhd87::::res://cenas/CENAS COD ZOMBIES/bullet.tscn
+::res://scr/SCR COD ZOMBIES/weapon_resources/::1731358488
+magnun.tres::Resource/Weapon_Resource::1594916351322490018::1731357526::0::1::::<><>::res://scr/SCR COD ZOMBIES/weapon_resource.gd<>uid://x0vsryu7hl56::::res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/SURVIVOR_IO_basic_rigid_body_projectile.tscn<>res://scr/SCR COD ZOMBIES/Secondary_Fire_Scripts/secondar_fire_Resource.gd<>uid://7xcyarlb8ea6::::res://cenas/Itens/magnun_solta.tscn
+MP7.tres::Resource/Weapon_Resource::545456581370444007::1731358488::0::1::::<><>::res://scr/SCR COD ZOMBIES/weapon_resource.gd<>uid://bwnkppamadqpt::::res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/SURVIVOR_IO_MP7_projectile.tscn<>uid://bsf63fmjegjkf::::res://cenas/Itens/mp_7_solta.tscn<>res://scr/SCR COD ZOMBIES/Secondary_Fire_Scripts/secondar_fire_Resource.gd
+sem_armas.tres::Resource/Weapon_Resource::529169729428359164::1724360342::0::1::::<><>::res://scr/SCR COD ZOMBIES/weapon_resource.gd
+shotgun.tres::Resource/Weapon_Resource::1323147054464247081::1731352394::0::1::::<><>::uid://cr5nw5yw22vt0::::res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/shotgun_projectile.tscn<>uid://bv5t1blyx0no5::::res://cenas/Itens/shot_gun_solta.tscn<>res://scr/SCR COD ZOMBIES/weapon_resource.gd<>res://scr/SCR COD ZOMBIES/Secondary_Fire_Scripts/secondar_fire_Resource.gd
+::res://textures/::1726484142
+amethyst_block.png::CompressedTexture2D::3463640632661903757::1724360348::1726484142::1::::<><>::
+black_concrete.png::CompressedTexture2D::4083543034461808201::1724360348::1726484142::1::::<><>::
+blue_ice.png::CompressedTexture2D::5696383370608115439::1724360348::1726484142::1::::<><>::
+chiseled_quartz_block.png::CompressedTexture2D::1849204314541718436::1724360348::1726484142::1::::<><>::
+chiseled_quartz_block_top.png::CompressedTexture2D::8204709792691634423::1724360348::1726484142::1::::<><>::
+chiseled_tuff.png::CompressedTexture2D::9002063009150309962::1724360348::1726484142::1::::<><>::
+chiseled_tuff_bricks.png::CompressedTexture2D::4814654771769175626::1724360348::1726484142::1::::<><>::
+chiseled_tuff_bricks_top.png::CompressedTexture2D::7427392499824802101::1724360348::1726484142::1::::<><>::
+chiseled_tuff_top.png::CompressedTexture2D::1711924609066837883::1724360348::1726484142::1::::<><>::
+deepslate_bricks.png::CompressedTexture2D::184514977883088386::1724360348::1726484142::1::::<><>::
+desktop.ini::TextFile::-1::1724360348::0::1::::<><>::
+dirt.png::CompressedTexture2D::4174038893879797927::1724360348::1726484142::1::::<><>::
+gold_block.png::CompressedTexture2D::3512683472158974717::1724360348::1726484142::1::::<><>::
+grass_block_side.png::CompressedTexture2D::5038327270306569721::1724360348::1726484142::1::::<><>::
+grass_block_top.png::CompressedTexture2D::1602070504405357252::1724360348::1726484142::1::::<><>::
+oak_planks.png::CompressedTexture2D::8851868595271687360::1724360348::1726484142::1::::<><>::
+portal.png::CompressedTexture2D::6036835206396754135::1724360348::1726484142::1::::<><>::
+stone_bricks.png::CompressedTexture2D::593041484165101518::1724360350::1726484142::1::::<><>::
+white_concrete.png::CompressedTexture2D::198623935360593500::1724360350::1726484142::1::::<><>::

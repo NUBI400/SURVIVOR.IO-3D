@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8jekjpjurmsg"
+path="res://.godot/imported/som do espaço seloko.mp3-2ddef7c23ee7c773ce44d6787719ec72.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/som do espaço seloko.mp3"
+dest_files=["res://.godot/imported/som do espaço seloko.mp3-2ddef7c23ee7c773ce44d6787719ec72.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

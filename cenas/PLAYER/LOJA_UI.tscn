@@ -1,0 +1,749 @@
+[gd_scene load_steps=38 format=3 uid="uid://cc7ldkgurbhax"]
+
+[ext_resource type="Script" path="res://scr/Player/UI/Loja_UI.gd" id="1_nvb66"]
+[ext_resource type="Theme" uid="uid://djby2hlfa2sq4" path="res://Material/Thema_UI_loja.tres" id="2_klaag"]
+[ext_resource type="Shader" path="res://Material/LOJA_UI.gdshader" id="2_tagjp"]
+[ext_resource type="FontFile" uid="uid://c3ilng4crv551" path="res://assets/fonts/upheavtt.ttf" id="3_76smo"]
+[ext_resource type="PackedScene" uid="uid://d03h4wsnjpeoe" path="res://cenas/PLAYER/loja/loja_arma.tscn" id="5_ep1h8"]
+[ext_resource type="PackedScene" uid="uid://dpomnn2ujxqtx" path="res://cenas/PLAYER/loja/comprar_buffs.tscn" id="6_j2xjt"]
+[ext_resource type="Script" path="res://cenas/PLAYER/loja/arma_visual.gd" id="6_w80o4"]
+[ext_resource type="Script" path="res://cenas/PLAYER/loja/upegrades.gd" id="7_gfdi6"]
+
+[sub_resource type="Animation" id="Animation_rd10e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("fundo:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_vwhtq"]
+resource_name = "blur"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("fundo:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 5.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gsyov"]
+_data = {
+"RESET": SubResource("Animation_rd10e"),
+"blur": SubResource("Animation_vwhtq")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f42ob"]
+shader = ExtResource("2_tagjp")
+shader_parameter/lod = 0.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1s3jm"]
+bg_color = Color(0.0588235, 0.0196078, 0.176471, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_xplgf"]
+base_font = ExtResource("3_76smo")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r7d2q"]
+bg_color = Color(0.0588235, 0.0196078, 0.176471, 1)
+draw_center = false
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[sub_resource type="Theme" id="Theme_rpfiw"]
+Button/font_sizes/font_size = 80
+Button/fonts/font = SubResource("FontVariation_xplgf")
+Button/styles/focus = SubResource("StyleBoxFlat_r7d2q")
+Button/styles/normal = SubResource("StyleBoxFlat_r7d2q")
+Button/styles/pressed = SubResource("StyleBoxFlat_r7d2q")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fjv4k"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101961, 0.101961, 0.101961, 0.164706)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="Theme" id="Theme_o6agb"]
+Panel/styles/panel = SubResource("StyleBoxFlat_fjv4k")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hgvly"]
+bg_color = Color(0.0588235, 0.0196078, 0.176471, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mjy3k"]
+bg_color = Color(0.0588235, 0.0196078, 0.176471, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1yioo"]
+bg_color = Color(0.0588235, 0.0196078, 0.176471, 1)
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ljxaq"]
+bg_color = Color(0.0588235, 0.0196078, 0.176471, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tuxv5"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.12549, 0.211765, 0.443137, 1)
+border_width_left = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.0588235, 0.0196078, 0.176471, 1)
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+anti_aliasing = false
+
+[sub_resource type="FontVariation" id="FontVariation_4s3oi"]
+base_font = ExtResource("3_76smo")
+
+[sub_resource type="ImageTexture" id="ImageTexture_invjf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ors6f"]
+bg_color = Color(0.211765, 0.52549, 0.560784, 1)
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7ola2"]
+bg_color = Color(0.211765, 0.52549, 0.560784, 1)
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhtku"]
+bg_color = Color(0.372549, 0.780392, 0.364706, 1)
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_laf65"]
+content_margin_left = 8.0
+bg_color = Color(0.0588235, 0.0196078, 0.176471, 0.466667)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_msjaq"]
+vertical = true
+
+[sub_resource type="Theme" id="Theme_qndln"]
+Button/font_sizes/font_size = 28
+Button/fonts/font = ExtResource("3_76smo")
+Button/styles/focus = SubResource("StyleBoxFlat_hgvly")
+Button/styles/hover = SubResource("StyleBoxFlat_mjy3k")
+Button/styles/normal = SubResource("StyleBoxFlat_1yioo")
+Button/styles/pressed = SubResource("StyleBoxFlat_ljxaq")
+Panel/styles/panel = SubResource("StyleBoxFlat_tuxv5")
+RichTextLabel/font_sizes/normal_font_size = 54
+RichTextLabel/fonts/normal_font = SubResource("FontVariation_4s3oi")
+VScrollBar/icons/decrement = SubResource("ImageTexture_invjf")
+VScrollBar/icons/decrement_highlight = SubResource("ImageTexture_invjf")
+VScrollBar/icons/decrement_pressed = SubResource("ImageTexture_invjf")
+VScrollBar/icons/increment = SubResource("ImageTexture_invjf")
+VScrollBar/icons/increment_highlight = SubResource("ImageTexture_invjf")
+VScrollBar/icons/increment_pressed = SubResource("ImageTexture_invjf")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_ors6f")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_7ola2")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_lhtku")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_laf65")
+VSeparator/constants/separation = 2
+VSeparator/styles/separator = SubResource("StyleBoxLine_msjaq")
+
+[sub_resource type="FontVariation" id="FontVariation_hqfei"]
+base_font = ExtResource("3_76smo")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_01igu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nslnd"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.12549, 0.211765, 0.443137, 1)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0.0588235, 0.0196078, 0.176471, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+anti_aliasing = false
+
+[sub_resource type="Theme" id="Theme_2sb13"]
+Button/font_sizes/font_size = 28
+Button/fonts/font = ExtResource("3_76smo")
+Button/styles/focus = SubResource("StyleBoxFlat_hgvly")
+Button/styles/hover = SubResource("StyleBoxFlat_mjy3k")
+Button/styles/normal = SubResource("StyleBoxFlat_1yioo")
+Button/styles/pressed = SubResource("StyleBoxFlat_ljxaq")
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 0)
+Label/constants/line_spacing = 3
+Label/constants/outline_size = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/constants/shadow_outline_size = 1
+Label/font_sizes/font_size = 50
+Label/fonts/font = SubResource("FontVariation_hqfei")
+Label/styles/normal = SubResource("StyleBoxEmpty_01igu")
+Panel/styles/panel = SubResource("StyleBoxFlat_nslnd")
+RichTextLabel/font_sizes/normal_font_size = 60
+RichTextLabel/fonts/normal_font = SubResource("FontVariation_4s3oi")
+VScrollBar/icons/decrement = SubResource("ImageTexture_invjf")
+VScrollBar/icons/decrement_highlight = SubResource("ImageTexture_invjf")
+VScrollBar/icons/decrement_pressed = SubResource("ImageTexture_invjf")
+VScrollBar/icons/increment = SubResource("ImageTexture_invjf")
+VScrollBar/icons/increment_highlight = SubResource("ImageTexture_invjf")
+VScrollBar/icons/increment_pressed = SubResource("ImageTexture_invjf")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_ors6f")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_7ola2")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_lhtku")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_laf65")
+VSeparator/constants/separation = 2
+VSeparator/styles/separator = SubResource("StyleBoxLine_msjaq")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a36f1"]
+draw_center = false
+
+[sub_resource type="Theme" id="Theme_xoauj"]
+Button/font_sizes/font_size = 28
+Button/fonts/font = ExtResource("3_76smo")
+Button/styles/focus = SubResource("StyleBoxFlat_hgvly")
+Button/styles/hover = SubResource("StyleBoxFlat_mjy3k")
+Button/styles/normal = SubResource("StyleBoxFlat_1yioo")
+Button/styles/pressed = SubResource("StyleBoxFlat_ljxaq")
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 0)
+Label/constants/line_spacing = 3
+Label/constants/outline_size = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/constants/shadow_outline_size = 1
+Label/font_sizes/font_size = 50
+Label/fonts/font = SubResource("FontVariation_hqfei")
+Label/styles/normal = SubResource("StyleBoxEmpty_01igu")
+Panel/styles/panel = SubResource("StyleBoxFlat_nslnd")
+RichTextLabel/font_sizes/normal_font_size = 24
+RichTextLabel/fonts/normal_font = SubResource("FontVariation_4s3oi")
+VScrollBar/icons/decrement = SubResource("ImageTexture_invjf")
+VScrollBar/icons/decrement_highlight = SubResource("ImageTexture_invjf")
+VScrollBar/icons/decrement_pressed = SubResource("ImageTexture_invjf")
+VScrollBar/icons/increment = SubResource("ImageTexture_invjf")
+VScrollBar/icons/increment_highlight = SubResource("ImageTexture_invjf")
+VScrollBar/icons/increment_pressed = SubResource("ImageTexture_invjf")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_ors6f")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_7ola2")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_lhtku")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_laf65")
+VSeparator/constants/separation = 2
+VSeparator/styles/separator = SubResource("StyleBoxLine_msjaq")
+
+[node name="LOJA_UI" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_nvb66")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gsyov")
+}
+
+[node name="fundo" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_f42ob")
+custom_minimum_size = Vector2(1280, 720)
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="Control" type="Control" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BARRAMEIO" type="Panel" parent="Control"]
+z_index = 1
+layout_mode = 2
+offset_left = 342.0
+offset_top = 54.0
+offset_right = 358.0
+offset_bottom = 665.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1s3jm")
+
+[node name="BARRAMEIO2" type="Panel" parent="Control"]
+z_index = 1
+layout_mode = 2
+offset_left = 342.0
+offset_top = 301.0
+offset_right = 1157.0
+offset_bottom = 317.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1s3jm")
+
+[node name="voltar" type="Button" parent="Control"]
+z_index = 99
+layout_mode = 0
+offset_left = 34.0
+offset_top = 39.0
+offset_right = 125.0
+offset_bottom = 682.0
+theme = SubResource("Theme_rpfiw")
+text = "v
+o
+l
+t
+a
+r"
+
+[node name="comprar" type="Button" parent="Control"]
+z_index = 99
+layout_mode = 0
+offset_left = 1158.0
+offset_top = 39.0
+offset_right = 1249.0
+offset_bottom = 682.0
+theme = SubResource("Theme_rpfiw")
+text = "C
+O
+M
+P
+R
+A
+r"
+
+[node name="CenterContainer" type="CenterContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = SubResource("Theme_o6agb")
+
+[node name="Panel" type="Panel" parent="Control/CenterContainer"]
+custom_minimum_size = Vector2(1040, 640)
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("2_klaag")
+
+[node name="vbox" type="HBoxContainer" parent="Control/CenterContainer"]
+custom_minimum_size = Vector2(1000, 600)
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("2_klaag")
+
+[node name="ARMAS" type="VBoxContainer" parent="Control/CenterContainer/vbox"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Armas_text" type="RichTextLabel" parent="Control/CenterContainer/vbox/ARMAS"]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("2_klaag")
+text = " ARMAS
+"
+
+[node name="armas_scroll" type="ScrollContainer" parent="Control/CenterContainer/vbox/ARMAS"]
+custom_minimum_size = Vector2(200, 540)
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("2_klaag")
+
+[node name="VBOX_armas_scroll" type="VBoxContainer" parent="Control/CenterContainer/vbox/ARMAS/armas_scroll"]
+custom_minimum_size = Vector2(0, 500)
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="loja_arma" parent="Control/CenterContainer/vbox/ARMAS/armas_scroll/VBOX_armas_scroll" instance=ExtResource("5_ep1h8")]
+layout_mode = 2
+text = "Magnun"
+_weapon_name = "Magnun"
+
+[node name="loja_arma2" parent="Control/CenterContainer/vbox/ARMAS/armas_scroll/VBOX_armas_scroll" instance=ExtResource("5_ep1h8")]
+layout_mode = 2
+text = "MP7"
+_weapon_name = "MP7"
+
+[node name="VSeparator" type="VSeparator" parent="Control/CenterContainer/vbox"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/CenterContainer/vbox"]
+custom_minimum_size = Vector2(790, 0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer"]
+custom_minimum_size = Vector2(0, 600)
+layout_mode = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="Arma_visual" type="Control" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+mouse_filter = 2
+theme = SubResource("Theme_qndln")
+script = ExtResource("6_w80o4")
+
+[node name="Label" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual"]
+layout_mode = 2
+offset_left = 21.0
+offset_top = 5.0
+offset_right = 771.0
+offset_bottom = 63.0
+mouse_filter = 2
+theme = SubResource("Theme_2sb13")
+bbcode_enabled = true
+text = "ORBE BRANCO"
+
+[node name="DINHEIRO" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual"]
+layout_mode = 2
+offset_left = 522.0
+offset_top = 5.0
+offset_right = 771.0
+offset_bottom = 63.0
+mouse_filter = 2
+theme = SubResource("Theme_2sb13")
+bbcode_enabled = true
+text = "$ 10"
+
+[node name="revert_timer" type="Timer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/DINHEIRO"]
+one_shot = true
+
+[node name="hbox" type="HBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual"]
+custom_minimum_size = Vector2(750, 150)
+layout_mode = 2
+offset_left = 20.0
+offset_top = 50.0
+offset_right = 724.0
+offset_bottom = 200.0
+mouse_filter = 2
+theme = SubResource("Theme_qndln")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox"]
+custom_minimum_size = Vector2(375, 0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="HSeparator" type="HSeparator" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxFlat_a36f1")
+
+[node name="preco" type="HBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer"]
+layout_mode = 2
+
+[node name="text" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer/preco"]
+custom_minimum_size = Vector2(325, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "Preço"
+scroll_active = false
+
+[node name="numb" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer/preco"]
+modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "50$
+"
+scroll_active = false
+
+[node name="Damage" type="HBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer"]
+layout_mode = 2
+
+[node name="text" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer/Damage"]
+custom_minimum_size = Vector2(325, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "dano"
+scroll_active = false
+
+[node name="numb" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer/Damage"]
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "1
+"
+scroll_active = false
+
+[node name="Proje" type="HBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer"]
+layout_mode = 2
+
+[node name="text" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer/Proje"]
+custom_minimum_size = Vector2(325, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "projeteis"
+scroll_active = false
+
+[node name="numb" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer/Proje"]
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "1
+"
+scroll_active = false
+
+[node name="Reload" type="HBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer"]
+layout_mode = 2
+
+[node name="text" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer/Reload"]
+custom_minimum_size = Vector2(325, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "Tempo de recarga"
+scroll_active = false
+
+[node name="numb" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer/Reload"]
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "15
+"
+scroll_active = false
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox"]
+custom_minimum_size = Vector2(375, 0)
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxFlat_a36f1")
+
+[node name="taxadetiro" type="HBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer2"]
+layout_mode = 2
+
+[node name="text" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer2/taxadetiro"]
+custom_minimum_size = Vector2(325, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "taxa de tiro"
+scroll_active = false
+
+[node name="numb" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer2/taxadetiro"]
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "1
+"
+scroll_active = false
+
+[node name="municaomaxima" type="HBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer2"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="text" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer2/municaomaxima"]
+custom_minimum_size = Vector2(325, 40)
+layout_mode = 2
+mouse_filter = 2
+theme = SubResource("Theme_xoauj")
+text = "MUNIÇÃO MÁXIMA"
+scroll_active = false
+
+[node name="numb" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/hbox/VBoxContainer2/municaomaxima"]
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+mouse_filter = 2
+theme = SubResource("Theme_xoauj")
+text = "15
+"
+scroll_active = false
+
+[node name="ColorRect2" type="VBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+
+[node name="Upegrades" type="Control" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2"]
+layout_mode = 2
+script = ExtResource("7_gfdi6")
+
+[node name="Label" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -375.0
+offset_right = 375.0
+offset_bottom = 58.0
+grow_horizontal = 2
+theme = SubResource("Theme_2sb13")
+bbcode_enabled = true
+text = "buffs passivos"
+
+[node name="scrollcontainer" type="ScrollContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades"]
+custom_minimum_size = Vector2(750, 150)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 52.0
+offset_right = 794.0
+offset_bottom = 353.0
+theme = SubResource("Theme_qndln")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer"]
+custom_minimum_size = Vector2(750, 0)
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxFlat_a36f1")
+
+[node name="Maxvida" type="HBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="text" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer/Maxvida"]
+custom_minimum_size = Vector2(325, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "+ vida Maxima
+"
+scroll_active = false
+
+[node name="numb" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer/Maxvida"]
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "1 $
+"
+scroll_active = false
+
+[node name="comprar" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer/Maxvida" instance=ExtResource("6_j2xjt")]
+layout_mode = 2
+_buff_name = "vidamax"
+
+[node name="RecuVida" type="HBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="text" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer/RecuVida"]
+custom_minimum_size = Vector2(325, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "+ recupera;ao de vida"
+scroll_active = false
+
+[node name="numb" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer/RecuVida"]
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "1 $
+"
+scroll_active = false
+
+[node name="comprar" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer/RecuVida" instance=ExtResource("6_j2xjt")]
+visible = false
+layout_mode = 2
+
+[node name="Velocit" type="HBoxContainer" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="text" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer/Velocit"]
+custom_minimum_size = Vector2(325, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "+ velocidade de movimento"
+scroll_active = false
+
+[node name="numb" type="RichTextLabel" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer/Velocit"]
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+theme = SubResource("Theme_xoauj")
+text = "15 $
+"
+scroll_active = false
+
+[node name="comprar" parent="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer/Velocit" instance=ExtResource("6_j2xjt")]
+layout_mode = 2
+_buff_name = "velocidade"
+
+[connection signal="open_or_not_open" from="." to="Control/CenterContainer/vbox/ARMAS/armas_scroll/VBOX_armas_scroll/loja_arma" method="_on_loja_ui_open_or_not_open"]
+[connection signal="open_or_not_open" from="." to="Control/CenterContainer/vbox/ARMAS/armas_scroll/VBOX_armas_scroll/loja_arma2" method="_on_loja_ui_open_or_not_open"]
+[connection signal="button_down" from="Control/voltar" to="." method="_on_voltar_button_down"]
+[connection signal="button_down" from="Control/comprar" to="." method="_on_comprar_button_down"]
+[connection signal="weapons" from="Control/CenterContainer/vbox/ARMAS/armas_scroll/VBOX_armas_scroll/loja_arma" to="." method="_on_loja_arma_weapons"]
+[connection signal="weapons" from="Control/CenterContainer/vbox/ARMAS/armas_scroll/VBOX_armas_scroll/loja_arma2" to="." method="_on_loja_arma_weapons"]
+[connection signal="timeout" from="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual/DINHEIRO/revert_timer" to="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/Arma_visual" method="_on_revert_timeout"]
+[connection signal="buff" from="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer/Maxvida/comprar" to="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades" method="_on_comprar_buff"]
+[connection signal="buff" from="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer/RecuVida/comprar" to="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades" method="_on_comprar_buff"]
+[connection signal="buff" from="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades/scrollcontainer/VBoxContainer/Velocit/comprar" to="Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2/Upegrades" method="_on_comprar_buff"]

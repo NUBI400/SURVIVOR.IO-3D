@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://j6b6uf4g3qnq"]
+
+[resource]
+cull_mode = 1
+depth_draw_mode = 2
+shading_mode = 0
+diffuse_mode = 3
+grow = true
+grow_amount = 0.02
+point_size = 128.0

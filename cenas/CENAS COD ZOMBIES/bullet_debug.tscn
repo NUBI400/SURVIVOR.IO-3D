@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://drs6fe8opbuie"]
+
+[ext_resource type="Texture2D" uid="uid://uidicgaojgdi" path="res://assets/HUD ASSETS/crosshair046.png" id="1_bqvme"]
+[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/bullet_debug.gd" id="2_qxbxm"]
+
+[node name="bullet_debug" type="Sprite3D"]
+modulate = Color(1, 0.00784314, 0.0705882, 1)
+billboard = 2
+texture = ExtResource("1_bqvme")
+script = ExtResource("2_qxbxm")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

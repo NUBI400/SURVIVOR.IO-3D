@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://cpj0tcne0qshc"]
+
+[ext_resource type="Shader" path="res://Material/shaders_scrs/motion_line_shaders/motion_line.gdshader" id="1_5wx5o"]
+
+[resource]
+shader = ExtResource("1_5wx5o")
+shader_parameter/line_alpha = 0.2
+shader_parameter/scale_line = 160.0
+shader_parameter/speedScale = 6.0
+shader_parameter/clipPosition = 0.4

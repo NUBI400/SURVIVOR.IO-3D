@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8xrjp6d4fiwk"]
+
+[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/Projectiles/Projectile.gd" id="1_to3cr"]
+
+[node name="Projectile" type="Node3D"]
+script = ExtResource("1_to3cr")

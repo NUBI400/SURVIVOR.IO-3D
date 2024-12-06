@@ -1,0 +1,151 @@
+[gd_scene load_steps=16 format=3 uid="uid://cyvidtcfcxemt"]
+
+[ext_resource type="PackedScene" uid="uid://whvjqvmfvtvj" path="res://cenas/PLAYER/player_SURVIVOR_IO.tscn" id="1_4qu2u"]
+[ext_resource type="Script" path="res://scr/Mapas/survivor_io_3d.gd" id="1_yushq"]
+[ext_resource type="PackedScene" uid="uid://c8g4ni43sa473" path="res://cenas/Inimigos/Inimigo_padrao.tscn" id="2_ncrh2"]
+[ext_resource type="Script" path="res://scr/OBJETOS/target_collision.gd" id="3_a2t6g"]
+[ext_resource type="PackedScene" uid="uid://bej2unxx7vutf" path="res://cenas/OBJETOS/loja.tscn" id="5_0qguj"]
+[ext_resource type="PackedScene" uid="uid://cjjvdjx3ffgb2" path="res://cenas/Inimigos/Inimigo_long_rang.tscn" id="6_lduws"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ej3i3"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_bottom_color = Color(0.239216, 0.427451, 0.827451, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_3hxny"]
+sky_material = SubResource("ProceduralSkyMaterial_ej3i3")
+
+[sub_resource type="Environment" id="Environment_72wbj"]
+background_mode = 2
+sky = SubResource("Sky_3hxny")
+tonemap_mode = 2
+sdfgi_enabled = true
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xpv0l"]
+albedo_color = Color(1, 0.419608, 0.262745, 1)
+emission_enabled = true
+emission = Color(1, 0.258824, 0.192157, 1)
+emission_energy_multiplier = 4.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4xfw6"]
+size = Vector3(59.103, 8.65674, 120)
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_mcsjg"]
+vertices = PackedVector3Array(1.25, 0.5, -15.5, 14.5, 0.5, -15.75, 14.75, 0.5, -18.25, 1.25, 0.5, -59.5, 16.25, 0.5, -18, 16.25, 0.5, -16.5, 59.5, 0.5, -16.75, 59.5, 0.5, -59.5, 16.25, 0.5, -15.75, 59.5, 0.5, -15.5, 14.75, 0.5, -14, 1.25, 0.5, 59.5, 16.25, 0.5, -14.25, 59.5, 0.5, 59.5)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(6, 5, 4), PackedInt32Array(2, 3, 4), PackedInt32Array(4, 3, 6), PackedInt32Array(6, 3, 7), PackedInt32Array(5, 6, 8), PackedInt32Array(8, 6, 9), PackedInt32Array(1, 10, 0), PackedInt32Array(0, 10, 11), PackedInt32Array(12, 8, 9), PackedInt32Array(12, 9, 10), PackedInt32Array(10, 9, 13), PackedInt32Array(10, 13, 11)]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vndri"]
+size = Vector3(60, 10, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8mlgg"]
+size = Vector3(60, 10, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sjdrn"]
+size = Vector3(1, 10, 120)
+
+[node name="Survivor_io 3D" type="Node3D"]
+script = ExtResource("1_yushq")
+inimigos = Array[PackedScene]([ExtResource("2_ncrh2")])
+
+[node name="Timer_spawn_inimigo" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="Timer_dificuldade" type="Timer" parent="."]
+wait_time = 30.0
+autostart = true
+
+[node name="Visual" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, -0.642788, 0.766044, 0, 0.766044, 0.642788, -1, 2.80971e-08, -3.34849e-08, 12, 10, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Visual"]
+environment = SubResource("Environment_72wbj")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Visual"]
+transform = Transform3D(-0.112675, -0.219248, 0.969141, 0.143557, 0.961527, 0.234216, -0.983207, 0.165517, -0.0768655, 0, 0, 0)
+light_color = Color(0.756863, 0.796078, 1, 1)
+light_energy = 0.7
+shadow_enabled = true
+
+[node name="Moon" type="CSGSphere3D" parent="Visual"]
+transform = Transform3D(1, -5.32907e-15, 3.55271e-15, 0, 1, 2.98023e-08, 0, -2.98023e-08, 1, 936.886, 719.194, -681.017)
+material_override = SubResource("StandardMaterial3D_xpv0l")
+cast_shadow = 0
+radius = 80.0
+radial_segments = 100
+rings = 12
+
+[node name="Player" parent="." instance=ExtResource("1_4qu2u")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.50988, 5.60035, 0.922758)
+
+[node name="Magnun" parent="Player/Nek/Head/Eyes/Camera3D/Weapons_Manager/FPS_Rig" index="0"]
+transform = Transform3D(-0.04, 0, -1.01407e-07, 0, 0.04, 0, 1.01407e-07, 0, -0.04, 0.347522, -0.176, -0.932)
+
+[node name="Cilindro" parent="Player/Nek/Head/Eyes/Camera3D/Weapons_Manager/FPS_Rig/ShotGun" index="2"]
+transform = Transform3D(0.176329, 1.0314e-05, 3.89617e-08, -2.32057e-09, 0.33586, -0.175658, 4.7355e-07, -3.83882, -0.0153684, 0.198811, -0.275, 0.0579398)
+
+[node name="Carergador" parent="Player/Nek/Head/Eyes/Camera3D/Weapons_Manager/FPS_Rig/MP7" index="0"]
+transform = Transform3D(-3.61999e-06, 1, 0, -1, -3.61999e-06, 0, 0, 0, 2.55348, 0, 0.173845, 0.0205564)
+
+[node name="Arma" parent="Player/Nek/Head/Eyes/Camera3D/Weapons_Manager/FPS_Rig/MP7" index="1"]
+transform = Transform3D(-3.61999e-06, 1, 0, -1, -3.61999e-06, 0, 0, 0, 2.55349, 0, 0.0432424, 0)
+
+[node name="Gatilho" parent="Player/Nek/Head/Eyes/Camera3D/Weapons_Manager/FPS_Rig/MP7" index="2"]
+transform = Transform3D(-3.61999e-06, 1, 0, -1, -3.61999e-06, 0, 0, 0, 2.55349, 0, 0.0453634, -0.0113416)
+
+[node name="Camera" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 12, 2)
+
+[node name="SpawnableArea" type="Area3D" parent="." groups=["spawnable"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnableArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.4485, 4.09888, 0)
+shape = SubResource("BoxShape3D_4xfw6")
+
+[node name="Mapa" type="Node3D" parent="."]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="Mapa"]
+navigation_mesh = SubResource("NavigationMesh_mcsjg")
+
+[node name="PISO" type="CSGBox3D" parent="Mapa/NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, -0.5, 0)
+use_collision = true
+size = Vector3(60, 1, 120)
+
+[node name="Loja" parent="Mapa/NavigationRegion3D" instance=ExtResource("5_0qguj")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15.369, 0, -16.074)
+
+[node name="Fundo" type="CSGBox3D" parent="Mapa/NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+use_collision = true
+size = Vector3(1, 10, 120)
+script = ExtResource("3_a2t6g")
+
+[node name="Paredes_lados" type="StaticBody3D" parent="Mapa/NavigationRegion3D"]
+
+[node name="direita" type="CollisionShape3D" parent="Mapa/NavigationRegion3D/Paredes_lados"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 5, -60.5)
+shape = SubResource("BoxShape3D_vndri")
+
+[node name="esquerda" type="CollisionShape3D" parent="Mapa/NavigationRegion3D/Paredes_lados"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 5, 60.5)
+shape = SubResource("BoxShape3D_8mlgg")
+
+[node name="frente" type="CollisionShape3D" parent="Mapa/NavigationRegion3D/Paredes_lados"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.5, 5, 0)
+shape = SubResource("BoxShape3D_sjdrn")
+
+[node name="Inimigo_long_rang" parent="." instance=ExtResource("6_lduws")]
+transform = Transform3D(0.999885, 0, 0.0151838, 0, 1, 0, -0.0151838, 0, 0.999885, 22.0318, 0, 0)
+
+[connection signal="timeout" from="Timer_spawn_inimigo" to="." method="_on_timer_spawn_inimigo_timeout"]
+[connection signal="timeout" from="Timer_dificuldade" to="." method="_on_timer_dificuldade_timeout"]
+[connection signal="weapons" from="Mapa/NavigationRegion3D/Loja/Loja_visual/LOJA_UI" to="Player/Nek/Head/Eyes/Camera3D/Weapons_Manager" method="_on_pick_up"]
+
+[editable path="Player"]
+[editable path="Player/Nek/Head/Eyes/PlayerInteractor"]
+[editable path="Player/Nek/Head/Eyes/Camera3D/Weapons_Manager/FPS_Rig/ShotGun"]
+[editable path="Player/Nek/Head/Eyes/Camera3D/Weapons_Manager/FPS_Rig/MP7"]
+[editable path="Mapa/NavigationRegion3D/Loja"]
+[editable path="Mapa/NavigationRegion3D/Loja/Loja_visual/LOJA_UI"]

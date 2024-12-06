@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://x0vsryu7hl56"]
+
+[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/Projectiles/SURVIVOR_IO_Projectile.gd" id="1_vp5tc"]
+[ext_resource type="PackedScene" uid="uid://g25e3hdxhd87" path="res://cenas/CENAS COD ZOMBIES/bullet.tscn" id="2_10tij"]
+
+[node name="Projectile" type="Node3D"]
+script = ExtResource("1_vp5tc")
+Projectile_Type = "Rigidbody_Projectile"
+Projectile_Velocity = 20
+Display_Debug_Decal = false
+Rigid_Body_Projectile = ExtResource("2_10tij")

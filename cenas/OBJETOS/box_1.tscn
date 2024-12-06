@@ -1,0 +1,75 @@
+[gd_scene load_steps=10 format=3 uid="uid://bjwsr0q01mn6o"]
+
+[ext_resource type="Texture2D" uid="uid://dxsynf14s3j6x" path="res://assets/Modelos/Boxes/cardboard_box1_Box_21-256x256.png" id="1_nak3t"]
+[ext_resource type="Script" path="res://scr/OBJETOS/fisica_target.gd" id="1_ox68g"]
+[ext_resource type="Material" uid="uid://j6b6uf4g3qnq" path="res://Material/shaders_scrs/outline/outline.tres" id="2_7ldj7"]
+[ext_resource type="PackedScene" uid="uid://ce1m7g8530b58" path="res://cenas/interect_system/interactable.tscn" id="3_ysml4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j8qp6"]
+resource_name = "Material"
+cull_mode = 2
+albedo_texture = ExtResource("1_nak3t")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_k1tqw"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1.00001, 1.00001, 1),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray(0, 0, 6, 0, 4, 0, 0, 0, 2, 0, 6, 0, 3, 0, 6, 0, 2, 0, 3, 0, 7, 0, 6, 0, 7, 0, 4, 0, 6, 0, 7, 0, 5, 0, 4, 0, 5, 0, 3, 0, 1, 0, 5, 0, 7, 0, 3, 0, 1, 0, 2, 0, 0, 0, 1, 0, 3, 0, 2, 0, 5, 0, 0, 0, 4, 0, 5, 0, 1, 0, 0, 0),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray(254, 255, 254, 255, 0, 0, 0, 0, 254, 255, 0, 0, 0, 0, 0, 0, 254, 255, 254, 255, 255, 255, 0, 0, 254, 255, 0, 0, 255, 255, 0, 0, 0, 0, 254, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 254, 255, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hjotq"]
+resource_name = "cardboard_box1_Cube"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1.00001, 1.00001, 1),
+"attribute_data": PackedByteArray(241, 191, 25, 128, 241, 191, 25, 128, 241, 191, 25, 128, 241, 191, 12, 192, 241, 191, 12, 192, 241, 191, 12, 192, 227, 127, 25, 128, 227, 127, 25, 128, 227, 127, 25, 128, 227, 127, 12, 192, 227, 127, 12, 192, 227, 127, 12, 192, 241, 191, 38, 64, 241, 191, 38, 64, 255, 255, 25, 128, 241, 191, 255, 255, 241, 191, 52, 0, 255, 255, 12, 192, 214, 63, 25, 128, 227, 127, 38, 64, 227, 127, 38, 64, 214, 63, 12, 192, 227, 127, 255, 255, 227, 127, 52, 0),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray(1, 0, 20, 0, 13, 0, 1, 0, 7, 0, 20, 0, 10, 0, 18, 0, 6, 0, 10, 0, 21, 0, 18, 0, 23, 0, 12, 0, 19, 0, 23, 0, 16, 0, 12, 0, 15, 0, 9, 0, 3, 0, 15, 0, 22, 0, 9, 0, 5, 0, 8, 0, 2, 0, 5, 0, 11, 0, 8, 0, 17, 0, 0, 0, 14, 0, 17, 0, 4, 0, 0, 0),
+"material": SubResource("StandardMaterial3D_j8qp6"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(3.98785, 3.99439, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray(254, 255, 254, 255, 0, 0, 255, 255, 254, 255, 254, 255, 0, 0, 84, 213, 254, 255, 254, 255, 0, 0, 255, 191, 254, 255, 0, 0, 0, 0, 84, 213, 254, 255, 0, 0, 0, 0, 255, 255, 254, 255, 0, 0, 0, 0, 255, 191, 254, 255, 254, 255, 255, 255, 255, 127, 254, 255, 254, 255, 255, 255, 84, 213, 254, 255, 254, 255, 255, 255, 255, 191, 254, 255, 0, 0, 255, 255, 84, 213, 254, 255, 0, 0, 255, 255, 255, 127, 254, 255, 0, 0, 255, 255, 255, 191, 0, 0, 254, 255, 0, 0, 255, 255, 0, 0, 254, 255, 0, 0, 84, 213, 0, 0, 254, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 84, 213, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 254, 255, 255, 255, 255, 127, 0, 0, 254, 255, 255, 255, 255, 255, 0, 0, 254, 255, 255, 255, 84, 213, 0, 0, 0, 0, 255, 255, 255, 127, 0, 0, 0, 0, 255, 255, 84, 213, 0, 0, 0, 0, 255, 255, 255, 255, 255, 127, 254, 255, 84, 213, 170, 42, 255, 127, 0, 0, 84, 85, 84, 85, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 255, 255, 84, 213, 170, 42, 255, 127, 0, 0, 84, 85, 84, 85, 255, 127, 255, 255, 255, 127, 0, 0, 255, 63, 255, 127, 84, 213, 170, 42, 255, 127, 254, 255, 84, 85, 84, 85, 255, 63, 255, 127, 255, 127, 254, 255, 255, 127, 255, 255, 255, 63, 255, 127, 84, 213, 170, 42, 255, 127, 255, 255, 84, 85, 84, 85, 255, 63, 255, 127)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_k1tqw")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_udl6e"]
+points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vni20"]
+
+[node name="box1" type="RigidBody3D" groups=["Target"]]
+collision_layer = 8
+collision_mask = 43
+script = ExtResource("1_ox68g")
+highlight_material = ExtResource("2_7ldj7")
+
+[node name="Cube" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_hjotq")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_udl6e")
+
+[node name="Interactable" parent="." instance=ExtResource("3_ysml4")]
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionShape3D" parent="Interactable" index="0"]
+shape = SubResource("BoxShape3D_vni20")
+
+[connection signal="focused" from="Interactable" to="." method="_on_interactable_focused"]
+[connection signal="interacted" from="Interactable" to="." method="_on_interactable_interacted"]
+[connection signal="unfocused" from="Interactable" to="." method="_on_interactable_unfocused"]
+
+[editable path="Interactable"]

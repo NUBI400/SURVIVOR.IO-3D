@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://f7xjjv84qanl"
+path.s3tc="res://.godot/imported/call_of_duty_black_ops_mystery_box_25.png-0ef0450642025c4b4ca8708998929808.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "968ed38ddd4a780d30b3639cb12b71b4"
+}
+
+[deps]
+
+source_file="res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_25.png"
+dest_files=["res://.godot/imported/call_of_duty_black_ops_mystery_box_25.png-0ef0450642025c4b4ca8708998929808.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://assets/Modelos/Caixa_bo2/call_of_duty_black_ops_mystery_box_25.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://byy7v1fgtu2a8"]
+
+[ext_resource type="Script" path="res://scr/Celular/animation/celular_2D.gd" id="1_i2465"]
+[ext_resource type="PackedScene" uid="uid://dys2e1bmhpfc4" path="res://cenas/Celular/UIcelular.tscn" id="7_ci60r"]
+
+[sub_resource type="Animation" id="Animation_h7wuc"]
+resource_name = "celular_subindo"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(970, 740), Vector2(970, 320)]
+}
+
+[sub_resource type="Animation" id="Animation_y3mvp"]
+resource_name = "celular_descendo"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(970, 320), Vector2(970, 740)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_p7nas"]
+_data = {
+"celular_descendo": SubResource("Animation_y3mvp"),
+"celular_subindo": SubResource("Animation_h7wuc")
+}
+
+[node name="Celular" type="CanvasLayer"]
+script = ExtResource("1_i2465")
+
+[node name="Control" parent="." instance=ExtResource("7_ci60r")]
+offset_top = 740.0
+offset_bottom = 400.0
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_p7nas")
+}

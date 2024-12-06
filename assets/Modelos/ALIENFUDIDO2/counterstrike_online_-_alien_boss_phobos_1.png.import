@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cfb5wht38jw0c"
+path.s3tc="res://.godot/imported/counterstrike_online_-_alien_boss_phobos_1.png-888c84b25ce07ff0dce0ac501cdc250d.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "1cd066e1a794b1c4365a9058195e3898"
+}
+
+[deps]
+
+source_file="res://assets/Modelos/ALIENFUDIDO2/counterstrike_online_-_alien_boss_phobos_1.png"
+dest_files=["res://.godot/imported/counterstrike_online_-_alien_boss_phobos_1.png-888c84b25ce07ff0dce0ac501cdc250d.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

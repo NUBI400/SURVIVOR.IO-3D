@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="Weapon_Resource" load_steps=6 format=3 uid="uid://wyublodn8rbe"]
+
+[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/weapon_resource.gd" id="1_cnytp"]
+[ext_resource type="PackedScene" uid="uid://x0vsryu7hl56" path="res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/SURVIVOR_IO_basic_rigid_body_projectile.tscn" id="1_qem2s"]
+[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/Secondary_Fire_Scripts/secondar_fire_Resource.gd" id="2_jtiyg"]
+[ext_resource type="PackedScene" uid="uid://7xcyarlb8ea6" path="res://cenas/Itens/magnun_solta.tscn" id="2_lxq3d"]
+
+[sub_resource type="Resource" id="Resource_nhf5i"]
+script = ExtResource("2_jtiyg")
+LoadOverlay = false
+Zoom = true
+Zoom_Amount = 10
+ChangeSpray = false
+NewSprayVector = Vector4(0, 0, 0, 0)
+Seconday_Fire_Animation = "Magnun AIM ON"
+Seconday_Fire_Animation_Reset = "Magnun AIM OFF"
+Seconday_Fire_Animation_Shoot = "Magnun AIM SHOOT"
+Secondary_Fire_Shoot = false
+Fire_Type = "Projectile"
+Ammo = 0
+UpdateFlags = false
+Flags = {}
+
+[resource]
+script = ExtResource("1_cnytp")
+Weapon_Name = "Magnun"
+Activate_Anim = "Magnun Activate"
+Shoot_Anim = "Magnun Shoot"
+Reload_Anim = "Magnun Reload"
+Deactivate_Anim = "Magnun Deactivate"
+Out_Of_Ammo_Anim = "Magnun OOA"
+Melee_Anim = "Magnun Melee_Anim"
+Drop_Anim = "Magnun Drop_Anim"
+Current_Ammo = 6
+Reserve_Ammo = 6
+Magazine = 6
+Max_Ammo = 6
+AutoFire = true
+Weapon_Range = 2000
+Damage = 20
+Melee_Damage = 5.0
+Can_Be_Dropped = true
+Weapon_Drop = ExtResource("2_lxq3d")
+Projectile_To_Load = ExtResource("1_qem2s")
+Incremental_Reload = false
+Secondary_Fire_Resource = SubResource("Resource_nhf5i")

@@ -1,0 +1,106 @@
+[gd_scene load_steps=8 format=3 uid="uid://d03h4wsnjpeoe"]
+
+[ext_resource type="Theme" uid="uid://djby2hlfa2sq4" path="res://Material/Thema_UI_loja.tres" id="1_pjiec"]
+[ext_resource type="Script" path="res://cenas/PLAYER/loja/loja_arma.gd" id="2_1ps8k"]
+[ext_resource type="Texture2D" uid="uid://cnp664aiuxu10" path="res://assets/cadeado_branco.png" id="3_7odw2"]
+
+[sub_resource type="Animation" id="Animation_pm5h4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(65, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_dveye"]
+resource_name = "fade"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_e2c0e"]
+resource_name = "shake_and_flash"
+length = 0.21
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.158333, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(65, 0), Vector2(59, -8), Vector2(59, 9), Vector2(75, 9), Vector2(65, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.2001, 0.21),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 0, 0, 1), Color(1, 0, 0, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rjfda"]
+_data = {
+"RESET": SubResource("Animation_pm5h4"),
+"fade": SubResource("Animation_dveye"),
+"shake_and_flash": SubResource("Animation_e2c0e")
+}
+
+[node name="loja_arma" type="Button"]
+custom_minimum_size = Vector2(196, 60)
+theme = ExtResource("1_pjiec")
+script = ExtResource("2_1ps8k")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 65.0
+offset_right = 128.0
+offset_bottom = 60.0
+mouse_filter = 2
+texture = ExtResource("3_7odw2")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_rjfda")
+}
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]

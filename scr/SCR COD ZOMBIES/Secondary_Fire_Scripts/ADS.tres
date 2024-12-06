@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="SecondaryFireResource" load_steps=2 format=3 uid="uid://dqdowty5wxy3f"]
+
+[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/Secondary_Fire_Scripts/secondar_fire_Resource.gd" id="1_bveqb"]
+
+[resource]
+script = ExtResource("1_bveqb")
+LoadOverlay = false
+Zoom = true
+Zoom_Amount = 10
+ChangeSpray = false
+NewSprayVector = Vector4(0, 0, 0, 0)
+Seconday_Fire_Animation = ""
+Seconday_Fire_Animation_Reset = ""
+Secondary_Fire_Shoot = true
+Fire_Type = "Projectile"
+Ammo = 0
+UpdateFlags = false
+Flags = {
+"Shoot_Anim": ""
+}

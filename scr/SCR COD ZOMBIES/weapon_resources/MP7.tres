@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="Weapon_Resource" load_steps=6 format=3 uid="uid://h1hucjlqci52"]
+
+[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/weapon_resource.gd" id="1_52evw"]
+[ext_resource type="PackedScene" uid="uid://bwnkppamadqpt" path="res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/SURVIVOR_IO_MP7_projectile.tscn" id="1_smmlf"]
+[ext_resource type="PackedScene" uid="uid://bsf63fmjegjkf" path="res://cenas/Itens/mp_7_solta.tscn" id="2_0wky8"]
+[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/Secondary_Fire_Scripts/secondar_fire_Resource.gd" id="2_mu7pa"]
+
+[sub_resource type="Resource" id="Resource_0f64l"]
+script = ExtResource("2_mu7pa")
+LoadOverlay = false
+Zoom = true
+Zoom_Amount = 10
+ChangeSpray = false
+NewSprayVector = Vector4(0, 0, 0, 0)
+Seconday_Fire_Animation = "MP7 AIM ON"
+Seconday_Fire_Animation_Reset = "MP7 AIM OFF"
+Seconday_Fire_Animation_Shoot = "MP7 AIM Shoot"
+Secondary_Fire_Shoot = false
+Fire_Type = "Projectile"
+Ammo = 0
+UpdateFlags = false
+Flags = {
+"Shoot_Anim": ""
+}
+
+[resource]
+script = ExtResource("1_52evw")
+Weapon_Name = "MP7"
+Activate_Anim = "MP7 Activate"
+Shoot_Anim = "MP7 Shoot"
+Reload_Anim = "MP7 Reload"
+Deactivate_Anim = "MP7 Deactivate"
+Out_Of_Ammo_Anim = "MP7 OOA"
+Melee_Anim = "MP7 Melee_Anim"
+Drop_Anim = "MP7 Drop_Anim"
+Current_Ammo = 30
+Reserve_Ammo = 30
+Magazine = 30
+Max_Ammo = 30
+AutoFire = true
+Weapon_Range = 2000
+Damage = 10
+Melee_Damage = 5.0
+Can_Be_Dropped = true
+Weapon_Drop = ExtResource("2_0wky8")
+Projectile_To_Load = ExtResource("1_smmlf")
+Incremental_Reload = false
+Secondary_Fire_Resource = SubResource("Resource_0f64l")

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr5nw5yw22vt0"]
+
+[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/Projectiles/shotgun_projectile.gd" id="1_2ic3y"]
+
+[sub_resource type="Curve2D" id="Curve2D_r5mp5"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -21, -17, 0, 0, 0, 0, -9, -23, 0, 0, 0, 0, 14, -3, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, -9, 0, 0, 0, 0, 0, -2, -7, 0, 0, 0, 0, -10, -16, 0, 0, 0, 0, -20, -7, 0, 0, 0, 0, -13, 18, 0, 0, 0, 0, 10, 20, 0, 0, 0, 0, 22, -2, 0, 0, 0, 0, 6, -22)
+}
+point_count = 12
+
+[node name="shotgun_projectile" type="Node3D"]
+script = ExtResource("1_2ic3y")
+Split_Damage = true
+Apply_Knockback = true
+Knockback_Force = 20.0
+
+[node name="shotgun_pattern" type="Path2D" parent="."]
+curve = SubResource("Curve2D_r5mp5")

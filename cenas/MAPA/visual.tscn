@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://lq7g1kk6afwa"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ej3i3"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_3hxny"]
+sky_material = SubResource("ProceduralSkyMaterial_ej3i3")
+
+[sub_resource type="Environment" id="Environment_72wbj"]
+background_mode = 2
+sky = SubResource("Sky_3hxny")
+tonemap_mode = 2
+sdfgi_enabled = true
+glow_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_albedo = Color(0.294118, 0.247059, 0.498039, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xpv0l"]
+albedo_color = Color(1, 0.419608, 0.262745, 1)
+emission_enabled = true
+emission = Color(1, 0.258824, 0.192157, 1)
+emission_energy_multiplier = 4.0
+
+[node name="Visual" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_72wbj")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.603208, -0.409592, 0.684379, 0, 0.858065, 0.513541, -0.797584, 0.309772, -0.517592, 0, 0, 0)
+light_color = Color(0.756863, 0.796078, 1, 1)
+light_energy = 0.7
+shadow_enabled = true
+
+[node name="Moon" type="CSGSphere3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 937, 717, -683)
+material_override = SubResource("StandardMaterial3D_xpv0l")
+cast_shadow = 0
+radius = 80.0
+radial_segments = 100
+rings = 12

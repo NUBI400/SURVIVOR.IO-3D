@@ -1,0 +1,30 @@
+res://cenas/OBJETOS/loja.tscn
+res://scr/SCR COD ZOMBIES/weapon_resources/magnun.tres
+res://scr/SCR COD ZOMBIES/weapon_resources/shotgun.tres
+res://scr/SCR COD ZOMBIES/weapon_resources/MP7.tres
+res://Material/Thema_UI_loja.tres
+res://cenas/MAPA/survivor_io_3d.tscn
+res://cenas/PLAYER/player_SURVIVOR_IO.tscn
+res://cenas/Itens/mp_7_PRESANAPAREDE.tscn
+res://cenas/Inimigos/Inimigo_padrao.tscn
+res://cenas/Inimigos/Inimigo_tank.tscn
+res://scr/OBJETOS/loja.gd
+res://scr/Player/UI/tempo.gd
+res://cenas/PLAYER/player_robo.tscn
+res://cenas/PLAYER/loja/arma_visual.gd
+res://scr/SCR COD ZOMBIES/Survivor_Weapons_Manager.gd
+res://cenas/PLAYER/loja/loja_arma.tscn
+res://cenas/PLAYER/loja/loja_arma.gd
+res://scr/Player/Player_SURVIVOR_IO.gd
+res://scr/SCR COD ZOMBIES/HUD.gd
+res://scr/Global.gd
+res://cenas/PLAYER/loja/upegrades.gd
+res://cenas/CENAS COD ZOMBIES/bullet.tscn
+res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/SURVIVOR_IO_basic_rigid_body_projectile.tscn
+res://cenas/PLAYER/LOJA_UI.tscn
+res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/SURVIVOR_IO_MP7_projectile.tscn
+res://scr/Mapas/survivor_io_3d.gd
+res://scr/Inimigos/base_inimigo.gd
+res://cenas/PLAYER/camera.gd
+res://scr/Screan_shake.gd
+res://cenas/PLAYER/ScreanShake/ScreanShake.tscn

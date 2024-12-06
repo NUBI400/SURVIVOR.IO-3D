@@ -1,0 +1,94 @@
+[gd_scene load_steps=11 format=3 uid="uid://bej2unxx7vutf"]
+
+[ext_resource type="Script" path="res://scr/OBJETOS/loja.gd" id="1_pqcra"]
+[ext_resource type="PackedScene" uid="uid://cc7ldkgurbhax" path="res://cenas/PLAYER/LOJA_UI.tscn" id="2_t816h"]
+[ext_resource type="PackedScene" uid="uid://dqy7sn3qq2e5" path="res://cenas/OBJETOS/caixabo2.tscn" id="3_jy8wn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qnhu3"]
+size = Vector3(3.0722, 0.894592, 0.854858)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_8rjok"]
+radius = 6.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j6uie"]
+albedo_color = Color(0.372549, 0.780392, 0.364706, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4mpdu"]
+material = SubResource("StandardMaterial3D_j6uie")
+top_radius = 0.0
+bottom_radius = 0.0
+height = 0.001
+
+[sub_resource type="Animation" id="Animation_jaw3e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mesh:mesh:top_radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_8ki8q"]
+resource_name = "aumentar"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mesh:mesh:top_radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_giu27"]
+_data = {
+"RESET": SubResource("Animation_jaw3e"),
+"aumentar": SubResource("Animation_8ki8q")
+}
+
+[node name="Loja" type="StaticBody3D"]
+collision_mask = 2
+script = ExtResource("1_pqcra")
+
+[node name="Loja_visual" type="CanvasLayer" parent="."]
+layer = 99
+
+[node name="LOJA_UI" parent="Loja_visual" instance=ExtResource("2_t816h")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00595093, 0.45489, 0.00115967)
+shape = SubResource("BoxShape3D_qnhu3")
+
+[node name="Activate area" type="Area3D" parent="."]
+collision_layer = 128
+collision_mask = 128
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Activate area"]
+shape = SubResource("CylinderShape3D_8rjok")
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+mesh = SubResource("CylinderMesh_4mpdu")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_giu27")
+}
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("3_jy8wn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.21313, 0.614502, -0.0737579)
+
+[connection signal="area_entered" from="Activate area" to="." method="_on_activate_area_area_entered"]
+[connection signal="area_exited" from="Activate area" to="." method="_on_activate_area_area_exited"]
+
+[editable path="Loja_visual/LOJA_UI"]

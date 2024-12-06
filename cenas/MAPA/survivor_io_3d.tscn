@@ -1,0 +1,144 @@
+[gd_scene load_steps=18 format=3 uid="uid://cyvidtcfcxemt"]
+
+[ext_resource type="Script" path="res://scr/Mapas/survivor_io_3d.gd" id="1_yushq"]
+[ext_resource type="PackedScene" uid="uid://c8g4ni43sa473" path="res://cenas/Inimigos/Inimigo_padrao.tscn" id="2_ncrh2"]
+[ext_resource type="Script" path="res://scr/OBJETOS/target_collision.gd" id="3_a2t6g"]
+[ext_resource type="PackedScene" uid="uid://dehclmo6uswos" path="res://cenas/Inimigos/Inimigo_tank.tscn" id="3_sf16p"]
+[ext_resource type="AudioStream" uid="uid://c8jekjpjurmsg" path="res://assets/sounds/som do espaço seloko.mp3" id="4_rgkdd"]
+[ext_resource type="PackedScene" uid="uid://bej2unxx7vutf" path="res://cenas/OBJETOS/loja.tscn" id="5_0qguj"]
+[ext_resource type="Texture2D" uid="uid://cdvsnls4f6aas" path="res://assets/black-white-details-moon-texture-concept.jpg" id="5_vubpf"]
+[ext_resource type="PackedScene" uid="uid://o5jwn6e00phu" path="res://cenas/PLAYER/player_robo.tscn" id="8_t8gyo"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_alu4i"]
+
+[sub_resource type="Sky" id="Sky_b72ij"]
+sky_material = SubResource("PhysicalSkyMaterial_alu4i")
+
+[sub_resource type="Environment" id="Environment_72wbj"]
+background_mode = 2
+sky = SubResource("Sky_b72ij")
+tonemap_mode = 2
+sdfgi_enabled = true
+sdfgi_use_occlusion = true
+sdfgi_read_sky_light = false
+glow_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4xfw6"]
+size = Vector3(59.103, 8.65674, 120)
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_mcsjg"]
+vertices = PackedVector3Array(32, 0.5, -2.25, 32.25, 0.5, -0.5, 59.5, 0.5, -0.75, 59.5, 0.5, -59.5, 1.25, 0.5, 0, 30.25, 0.5, 0, 30.5, 0.5, -2.25, 1.25, 0.5, -59.5, 32.25, 0.5, 0.25, 59.5, 0.5, 0.5, 32, 0.5, 2, 59.5, 0.5, 59.5, 30.5, 0.5, 2, 1.25, 0.5, 59.5)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(6, 5, 4), PackedInt32Array(4, 7, 6), PackedInt32Array(6, 7, 3), PackedInt32Array(3, 0, 6), PackedInt32Array(1, 2, 8), PackedInt32Array(8, 2, 9), PackedInt32Array(8, 9, 10), PackedInt32Array(10, 9, 11), PackedInt32Array(4, 5, 12), PackedInt32Array(4, 12, 13), PackedInt32Array(13, 12, 11), PackedInt32Array(12, 10, 11)]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fw5vw"]
+albedo_color = Color(0.458405, 0.458405, 0.458405, 1)
+albedo_texture = ExtResource("5_vubpf")
+metallic_specular = 0.28
+refraction_scale = 1.0
+grow_amount = -16.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vndri"]
+size = Vector3(60, 10, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8mlgg"]
+size = Vector3(60, 10, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sjdrn"]
+size = Vector3(1, 10, 120)
+
+[node name="Survivor_io 3D" type="Node3D"]
+script = ExtResource("1_yushq")
+inimigos = Array[PackedScene]([ExtResource("3_sf16p"), ExtResource("2_ncrh2")])
+probabilidades = Array[float]([0.0, 1.0])
+spawn_margin = 10.0
+quantidade_inimigos_por_spawn = 40
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_rgkdd")
+volume_db = 24.0
+pitch_scale = 0.8
+autoplay = true
+parameters/looping = true
+
+[node name="Timer_spawn_inimigo" type="Timer" parent="."]
+wait_time = 4.0
+autostart = true
+
+[node name="Timer_dificuldade" type="Timer" parent="."]
+wait_time = 20.0
+autostart = true
+
+[node name="Visual" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 10, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Visual"]
+environment = SubResource("Environment_72wbj")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Visual"]
+transform = Transform3D(0.760165, 0.250175, 0.599635, -0.0075473, -0.919436, 0.393167, 0.649687, -0.303398, -0.697035, 0, 0, 0)
+shadow_enabled = true
+shadow_normal_bias = 1.0
+
+[node name="SpawnableArea" type="Area3D" parent="." groups=["spawnable"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnableArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.4485, 4.09888, 0)
+shape = SubResource("BoxShape3D_4xfw6")
+
+[node name="Mapa" type="Node3D" parent="."]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="Mapa"]
+navigation_mesh = SubResource("NavigationMesh_mcsjg")
+
+[node name="Loja" parent="Mapa/NavigationRegion3D" instance=ExtResource("5_0qguj")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.2497, -0.071981, -0.0574007)
+
+[node name="Upegrades" parent="Mapa/NavigationRegion3D/Loja/Loja_visual/LOJA_UI/Control/CenterContainer/vbox/VBoxContainer/HBoxContainer/ColorRect2" index="0" node_paths=PackedStringArray("UI")]
+UI = NodePath("../../../../../../../../../../../../Player/CanvasLayer")
+
+[node name="PISO" type="CSGBox3D" parent="Mapa/NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, -0.5, 0)
+use_collision = true
+size = Vector3(60, 1, 120)
+material = SubResource("StandardMaterial3D_fw5vw")
+
+[node name="Fundo" type="CSGBox3D" parent="Mapa/NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+visible = false
+use_collision = true
+size = Vector3(1, 10, 120)
+script = ExtResource("3_a2t6g")
+
+[node name="Paredes_lados" type="StaticBody3D" parent="Mapa/NavigationRegion3D"]
+
+[node name="direita" type="CollisionShape3D" parent="Mapa/NavigationRegion3D/Paredes_lados"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 5, -60.5)
+shape = SubResource("BoxShape3D_vndri")
+
+[node name="esquerda" type="CollisionShape3D" parent="Mapa/NavigationRegion3D/Paredes_lados"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 5, 60.5)
+shape = SubResource("BoxShape3D_8mlgg")
+
+[node name="frente" type="CollisionShape3D" parent="Mapa/NavigationRegion3D/Paredes_lados"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.5, 5, 0)
+shape = SubResource("BoxShape3D_sjdrn")
+
+[node name="Player" parent="." instance=ExtResource("8_t8gyo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.7345, 0, 0)
+
+[node name="Cilindro" parent="Player/Nek/Head/Eyes/Camera3D/Weapons_Manager/FPS_Rig/ShotGun" index="2"]
+transform = Transform3D(0.176329, 1.0314e-05, 3.89617e-08, -2.32057e-09, 0.33586, -0.175658, 4.7355e-07, -3.83882, -0.0153684, 0.198811, -0.275, 0.0579398)
+
+[node name="Zumbi" parent="." instance=ExtResource("3_sf16p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.0224, -1.90735e-06, 5.54861)
+
+[connection signal="timeout" from="Timer_spawn_inimigo" to="." method="_on_timer_spawn_inimigo_timeout"]
+[connection signal="timeout" from="Timer_dificuldade" to="." method="_on_timer_dificuldade_timeout"]
+[connection signal="weapons" from="Mapa/NavigationRegion3D/Loja/Loja_visual/LOJA_UI" to="Player/Nek/Head/Eyes/Camera3D/Weapons_Manager" method="_on_pick_up"]
+
+[editable path="Mapa/NavigationRegion3D/Loja"]
+[editable path="Mapa/NavigationRegion3D/Loja/Loja_visual/LOJA_UI"]
+[editable path="Player"]
+[editable path="Player/Nek/Head/Eyes/PlayerInteractor"]
+[editable path="Player/Nek/Head/Eyes/Camera3D/Weapons_Manager/FPS_Rig/ShotGun"]
+[editable path="Player/Nek/Head/Eyes/Camera3D/Weapons_Manager/FPS_Rig/MP7"]
