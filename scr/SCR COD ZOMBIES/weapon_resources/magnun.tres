@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="Weapon_Resource" load_steps=6 format=3 uid="uid://wyublodn8rbe"]
 
-[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/weapon_resource.gd" id="1_cnytp"]
+[ext_resource type="Script" uid="uid://dj7t5d5po5kpt" path="res://scr/SCR COD ZOMBIES/weapon_resource.gd" id="1_cnytp"]
 [ext_resource type="PackedScene" uid="uid://x0vsryu7hl56" path="res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/SURVIVOR_IO_basic_rigid_body_projectile.tscn" id="1_qem2s"]
-[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/Secondary_Fire_Scripts/secondar_fire_Resource.gd" id="2_jtiyg"]
+[ext_resource type="Script" uid="uid://c5ass0qhch5nw" path="res://scr/SCR COD ZOMBIES/Secondary_Fire_Scripts/secondar_fire_Resource.gd" id="2_jtiyg"]
 [ext_resource type="PackedScene" uid="uid://7xcyarlb8ea6" path="res://cenas/Itens/magnun_solta.tscn" id="2_lxq3d"]
 
 [sub_resource type="Resource" id="Resource_nhf5i"]

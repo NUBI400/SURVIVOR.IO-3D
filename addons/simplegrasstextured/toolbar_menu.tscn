@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://der2mmxtog2mt"]
 
-[ext_resource type="Script" path="res://addons/simplegrasstextured/toolbar_menu.gd" id="1_mmgcy"]
+[ext_resource type="Script" uid="uid://b25tqxw06n2cj" path="res://addons/simplegrasstextured/toolbar_menu.gd" id="1_mmgcy"]
 
 [node name="ToolbarMenu" type="MenuButton"]
 item_count = 11

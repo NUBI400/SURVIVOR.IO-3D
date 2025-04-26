@@ -1,14 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://bjwsr0q01mn6o"]
+[gd_scene load_steps=9 format=4 uid="uid://bjwsr0q01mn6o"]
 
-[ext_resource type="Texture2D" uid="uid://dxsynf14s3j6x" path="res://assets/Modelos/Boxes/cardboard_box1_Box_21-256x256.png" id="1_nak3t"]
-[ext_resource type="Script" path="res://scr/OBJETOS/fisica_target.gd" id="1_ox68g"]
+[ext_resource type="Script" uid="uid://hbtkvckjbsl0" path="res://scr/OBJETOS/fisica_target.gd" id="1_ox68g"]
 [ext_resource type="Material" uid="uid://j6b6uf4g3qnq" path="res://Material/shaders_scrs/outline/outline.tres" id="2_7ldj7"]
 [ext_resource type="PackedScene" uid="uid://ce1m7g8530b58" path="res://cenas/interect_system/interactable.tscn" id="3_ysml4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j8qp6"]
 resource_name = "Material"
 cull_mode = 2
-albedo_texture = ExtResource("1_nak3t")
 roughness = 0.5
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_k1tqw"]
@@ -16,12 +14,12 @@ _surfaces = [{
 "aabb": AABB(-0.5, -0.5, -0.5, 1.00001, 1.00001, 1),
 "format": 34896613377,
 "index_count": 36,
-"index_data": PackedByteArray(0, 0, 6, 0, 4, 0, 0, 0, 2, 0, 6, 0, 3, 0, 6, 0, 2, 0, 3, 0, 7, 0, 6, 0, 7, 0, 4, 0, 6, 0, 7, 0, 5, 0, 4, 0, 5, 0, 3, 0, 1, 0, 5, 0, 7, 0, 3, 0, 1, 0, 2, 0, 0, 0, 1, 0, 3, 0, 2, 0, 5, 0, 0, 0, 4, 0, 5, 0, 1, 0, 0, 0),
+"index_data": PackedByteArray("AAAGAAQAAAACAAYAAwAGAAIAAwAHAAYABwAEAAYABwAFAAQABQADAAEABQAHAAMAAQACAAAAAQADAAIABQAAAAQABQABAAAA"),
 "name": "Material",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 8,
-"vertex_data": PackedByteArray(254, 255, 254, 255, 0, 0, 0, 0, 254, 255, 0, 0, 0, 0, 0, 0, 254, 255, 254, 255, 255, 255, 0, 0, 254, 255, 0, 0, 255, 255, 0, 0, 0, 0, 254, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 254, 255, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0)
+"vertex_data": PackedByteArray("/v/+/wAAAAD+/wAAAAAAAP7//v///wAA/v8AAP//AAAAAP7/AAAAAAAAAAAAAAAAAAD+////AAAAAAAA//8AAA==")
 }]
 blend_shape_mode = 0
 
@@ -29,16 +27,16 @@ blend_shape_mode = 0
 resource_name = "cardboard_box1_Cube"
 _surfaces = [{
 "aabb": AABB(-0.5, -0.5, -0.5, 1.00001, 1.00001, 1),
-"attribute_data": PackedByteArray(241, 191, 25, 128, 241, 191, 25, 128, 241, 191, 25, 128, 241, 191, 12, 192, 241, 191, 12, 192, 241, 191, 12, 192, 227, 127, 25, 128, 227, 127, 25, 128, 227, 127, 25, 128, 227, 127, 12, 192, 227, 127, 12, 192, 227, 127, 12, 192, 241, 191, 38, 64, 241, 191, 38, 64, 255, 255, 25, 128, 241, 191, 255, 255, 241, 191, 52, 0, 255, 255, 12, 192, 214, 63, 25, 128, 227, 127, 38, 64, 227, 127, 38, 64, 214, 63, 12, 192, 227, 127, 255, 255, 227, 127, 52, 0),
+"attribute_data": PackedByteArray("8b8ZgPG/GYDxvxmA8b8MwPG/DMDxvwzA438ZgON/GYDjfxmA438MwON/DMDjfwzA8b8mQPG/JkD//xmA8b////G/NAD//wzA1j8ZgON/JkDjfyZA1j8MwON////jfzQA"),
 "format": 34896613399,
 "index_count": 36,
-"index_data": PackedByteArray(1, 0, 20, 0, 13, 0, 1, 0, 7, 0, 20, 0, 10, 0, 18, 0, 6, 0, 10, 0, 21, 0, 18, 0, 23, 0, 12, 0, 19, 0, 23, 0, 16, 0, 12, 0, 15, 0, 9, 0, 3, 0, 15, 0, 22, 0, 9, 0, 5, 0, 8, 0, 2, 0, 5, 0, 11, 0, 8, 0, 17, 0, 0, 0, 14, 0, 17, 0, 4, 0, 0, 0),
+"index_data": PackedByteArray("AQAUAA0AAQAHABQACgASAAYACgAVABIAFwAMABMAFwAQAAwADwAJAAMADwAWAAkABQAIAAIABQALAAgAEQAAAA4AEQAEAAAA"),
 "material": SubResource("StandardMaterial3D_j8qp6"),
 "name": "Material",
 "primitive": 3,
 "uv_scale": Vector4(3.98785, 3.99439, 0, 0),
 "vertex_count": 24,
-"vertex_data": PackedByteArray(254, 255, 254, 255, 0, 0, 255, 255, 254, 255, 254, 255, 0, 0, 84, 213, 254, 255, 254, 255, 0, 0, 255, 191, 254, 255, 0, 0, 0, 0, 84, 213, 254, 255, 0, 0, 0, 0, 255, 255, 254, 255, 0, 0, 0, 0, 255, 191, 254, 255, 254, 255, 255, 255, 255, 127, 254, 255, 254, 255, 255, 255, 84, 213, 254, 255, 254, 255, 255, 255, 255, 191, 254, 255, 0, 0, 255, 255, 84, 213, 254, 255, 0, 0, 255, 255, 255, 127, 254, 255, 0, 0, 255, 255, 255, 191, 0, 0, 254, 255, 0, 0, 255, 255, 0, 0, 254, 255, 0, 0, 84, 213, 0, 0, 254, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 84, 213, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 254, 255, 255, 255, 255, 127, 0, 0, 254, 255, 255, 255, 255, 255, 0, 0, 254, 255, 255, 255, 84, 213, 0, 0, 0, 0, 255, 255, 255, 127, 0, 0, 0, 0, 255, 255, 84, 213, 0, 0, 0, 0, 255, 255, 255, 255, 255, 127, 254, 255, 84, 213, 170, 42, 255, 127, 0, 0, 84, 85, 84, 85, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 255, 255, 84, 213, 170, 42, 255, 127, 0, 0, 84, 85, 84, 85, 255, 127, 255, 255, 255, 127, 0, 0, 255, 63, 255, 127, 84, 213, 170, 42, 255, 127, 254, 255, 84, 85, 84, 85, 255, 63, 255, 127, 255, 127, 254, 255, 255, 127, 255, 255, 255, 63, 255, 127, 84, 213, 170, 42, 255, 127, 255, 255, 84, 85, 84, 85, 255, 63, 255, 127)
+"vertex_data": PackedByteArray("/v/+/wAA///+//7/AABU1f7//v8AAP+//v8AAAAAVNX+/wAAAAD///7/AAAAAP+//v/+/////3/+//7///9U1f7//v////+//v8AAP//VNX+/wAA////f/7/AAD///+/AAD+/wAA//8AAP7/AABU1QAA/v8AAP//AAAAAAAAVNUAAAAAAAD//wAAAAAAAP//AAD+/////38AAP7//////wAA/v///1TVAAAAAP///38AAAAA//9U1QAAAAD//////3/+/1TVqir/fwAAVFVUVf9/////fwAA/3///1TVqir/fwAAVFVUVf9/////fwAA/z//f1TVqir/f/7/VFVUVf8//3//f/7//3////8//39U1aoq/3///1RVVFX/P/9/")
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_k1tqw")

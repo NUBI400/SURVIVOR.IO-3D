@@ -1,30 +1,59 @@
-res://cenas/OBJETOS/loja.tscn
-res://scr/SCR COD ZOMBIES/weapon_resources/magnun.tres
-res://scr/SCR COD ZOMBIES/weapon_resources/shotgun.tres
-res://scr/SCR COD ZOMBIES/weapon_resources/MP7.tres
-res://Material/Thema_UI_loja.tres
-res://cenas/MAPA/survivor_io_3d.tscn
-res://cenas/PLAYER/player_SURVIVOR_IO.tscn
-res://cenas/Itens/mp_7_PRESANAPAREDE.tscn
+res://addons/simplegrasstextured/about.tscn
+res://addons/simplegrasstextured/clear_all_confirmation_dialog.tscn
+res://addons/simplegrasstextured/global_parameters.tscn
+res://addons/simplegrasstextured/singleton.tscn
+res://addons/simplegrasstextured/toolbar.tscn
+res://addons/simplegrasstextured/toolbar_menu.tscn
+res://addons/simplegrasstextured/toolbar_up.tscn
+res://addons/virtual_joystick/test/test.tscn
+res://addons/virtual_joystick/virtual_joystick_scene.tscn
+res://cenas/CENAS COD ZOMBIES/bullet.tscn
+res://cenas/CENAS COD ZOMBIES/bullet_debug.tscn
+res://cenas/CENAS COD ZOMBIES/bullet_enemy.tscn
+res://cenas/CENAS COD ZOMBIES/bullet_revolver.tscn
+res://cenas/Inimigos/Inimigo_long_rang.tscn
 res://cenas/Inimigos/Inimigo_padrao.tscn
 res://cenas/Inimigos/Inimigo_tank.tscn
-res://scr/OBJETOS/loja.gd
-res://scr/Player/UI/tempo.gd
-res://cenas/PLAYER/player_robo.tscn
-res://cenas/PLAYER/loja/arma_visual.gd
-res://scr/SCR COD ZOMBIES/Survivor_Weapons_Manager.gd
+res://cenas/Inimigos/zumbi_spawn.tscn
+res://cenas/interect_system/interactable.tscn
+res://cenas/interect_system/interactor.tscn
+res://cenas/interect_system/player_interactor.tscn
+res://cenas/Itens/lanterna.tscn
+res://cenas/Itens/magnun_PRESANAPAREDE.tscn
+res://cenas/Itens/magnun_solta.tscn
+res://cenas/Itens/medkit.tscn
+res://cenas/Itens/mp7.tscn
+res://cenas/Itens/mp_7_PRESANAPAREDE.tscn
+res://cenas/Itens/mp_7_solta.tscn
+res://cenas/Itens/shot_gun.tscn
+res://cenas/Itens/shot_gun_PRESANAPAREDE.tscn
+res://cenas/Itens/shot_gun_solta.tscn
+res://cenas/MAPA/survivor_io_3d.tscn
+res://cenas/MAPA/visual.tscn
+res://cenas/OBJETOS/box_1.tscn
+res://cenas/OBJETOS/caixabo2.tscn
+res://cenas/OBJETOS/loja.tscn
+res://cenas/PLAYER/loja/comprar_buffs.tscn
 res://cenas/PLAYER/loja/loja_arma.tscn
-res://cenas/PLAYER/loja/loja_arma.gd
-res://scr/Player/Player_SURVIVOR_IO.gd
-res://scr/SCR COD ZOMBIES/HUD.gd
-res://scr/Global.gd
-res://cenas/PLAYER/loja/upegrades.gd
-res://cenas/CENAS COD ZOMBIES/bullet.tscn
-res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/SURVIVOR_IO_basic_rigid_body_projectile.tscn
-res://cenas/PLAYER/LOJA_UI.tscn
-res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/SURVIVOR_IO_MP7_projectile.tscn
-res://scr/Mapas/survivor_io_3d.gd
-res://scr/Inimigos/base_inimigo.gd
-res://cenas/PLAYER/camera.gd
-res://scr/Screan_shake.gd
 res://cenas/PLAYER/ScreanShake/ScreanShake.tscn
+res://cenas/PLAYER/alien.tscn
+res://cenas/PLAYER/cowboy.tscn
+res://cenas/PLAYER/LOJA_UI.tscn
+res://cenas/PLAYER/player.tscn
+res://cenas/PLAYER/player_robo.tscn
+res://cenas/PLAYER/player_SURVIVOR_IO_cowboy.tscn
+res://cenas/PLAYER/robo_model.tscn
+res://scr/SCR COD ZOMBIES/Secondary_Fire_Scripts/ADS.tres
+res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/basic_hitscan_projectile.tscn
+res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/basic_rigid_body_projectile.tscn
+res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/shotgun_projectile.tscn
+res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/SURVIVOR_IO_basic_rigid_body_projectile.tscn
+res://scr/SCR COD ZOMBIES/Spawnable_Objects/Projectiles_To_Load/SURVIVOR_IO_MP7_projectile.tscn
+res://scr/SCR COD ZOMBIES/weapon_resources/magnun.tres
+res://scr/SCR COD ZOMBIES/weapon_resources/MP7.tres
+res://scr/SCR COD ZOMBIES/weapon_resources/sem_armas.tres
+res://scr/SCR COD ZOMBIES/weapon_resources/shotgun.tres
+res://Material/Thema_UI_loja.tres
+res://scr/Global.gd
+res://scr/SCR COD ZOMBIES/HUD.gd
+res://scr/Mapas/survivor_io_3d.gd

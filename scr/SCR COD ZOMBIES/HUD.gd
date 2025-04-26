@@ -42,9 +42,9 @@ func uptate_ui_player_loja():
 
 
 func _physics_process(delta):
-	print(Global.health_player , "GLOBAL")
-	print(health.max_value , "max")
-	print(health.value)
+	#print(Global.health_player , "GLOBAL")
+	#print(health.max_value , "max")
+	#print(health.value)
 
 	
 	pontos.text = str(Global.pontos)

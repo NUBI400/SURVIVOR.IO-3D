@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=4 uid="uid://bjqelh3ebnwgu"]
 
-[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/armas code/bullet.gd" id="1_yme5j"]
+[ext_resource type="Script" uid="uid://wi088kc3cffw" path="res://scr/SCR COD ZOMBIES/armas code/bullet.gd" id="1_yme5j"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_en0rs"]
 resource_name = "Materiais.001"

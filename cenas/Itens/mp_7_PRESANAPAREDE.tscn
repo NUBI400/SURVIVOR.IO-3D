@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=4 uid="uid://c5q3jw34flpxu"]
 
-[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/Weapon_Pick_Up_WALLGUNS.gd" id="1_p6vpy"]
+[ext_resource type="Script" uid="uid://bmombkskaelys" path="res://scr/SCR COD ZOMBIES/Weapon_Pick_Up_WALLGUNS.gd" id="1_p6vpy"]
 [ext_resource type="PackedScene" uid="uid://ce1m7g8530b58" path="res://cenas/interect_system/interactable.tscn" id="2_s3moq"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8888y"]

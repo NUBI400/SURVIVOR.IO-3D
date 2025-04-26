@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=4 uid="uid://c2vlv174ul1tt"]
 
-[ext_resource type="Script" path="res://scr/Inimigos/bullet_enemy.gd" id="1_hmlnw"]
+[ext_resource type="Script" uid="uid://h0wr8wf0s3rk" path="res://scr/Inimigos/bullet_enemy.gd" id="1_hmlnw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_en0rs"]
 resource_name = "Materiais.001"

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Weapon_Resource" load_steps=2 format=3 uid="uid://hsll3o7ardom"]
 
-[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/weapon_resource.gd" id="2_24du2"]
+[ext_resource type="Script" uid="uid://dj7t5d5po5kpt" path="res://scr/SCR COD ZOMBIES/weapon_resource.gd" id="2_24du2"]
 
 [resource]
 script = ExtResource("2_24du2")
@@ -10,6 +10,8 @@ Shoot_Anim = "Empty"
 Reload_Anim = "Empty"
 Deactivate_Anim = "Empty"
 Out_Of_Ammo_Anim = "Empty"
+Melee_Anim = ""
+Drop_Anim = ""
 Current_Ammo = 0
 Reserve_Ammo = 0
 Magazine = 0
@@ -17,5 +19,6 @@ Max_Ammo = 0
 AutoFire = false
 Weapon_Range = 0
 Damage = 0
-Type = null
-Projectile_Velocity = 0
+Melee_Damage = 0.0
+Can_Be_Dropped = false
+Incremental_Reload = false

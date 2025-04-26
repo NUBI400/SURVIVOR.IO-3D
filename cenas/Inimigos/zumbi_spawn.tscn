@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://hkc7sjvmrts5"]
 
-[ext_resource type="Script" path="res://scr/Inimigos/Zumbi spawn.gd" id="1_6bojv"]
+[ext_resource type="Script" uid="uid://u0pxhpc44eqj" path="res://scr/Inimigos/Zumbi spawn.gd" id="1_6bojv"]
 
 [node name="Zumbi spawn" type="Node3D"]
 script = ExtResource("1_6bojv")

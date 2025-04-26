@@ -12,23 +12,18 @@ config_version=5
 
 config/name="SURVIVOR.IO 3D"
 run/main_scene="res://cenas/MAPA/survivor_io_3d.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Global="*res://scr/Global.gd"
-SimpleGrass="*res://addons/simplegrasstextured/singleton.tscn"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/simplegrasstextured/plugin.cfg")
 
 [input]
 
@@ -191,42 +186,3 @@ pointing/emulate_mouse_from_touch=false
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-
-[shader_globals]
-
-sgt_player_position={
-"type": "vec3",
-"value": Vector3(1e+06, 1e+06, 1e+06)
-}
-sgt_player_mov={
-"type": "vec3",
-"value": Vector3(0, 0, 0)
-}
-sgt_normal_displacement={
-"type": "sampler2D",
-"value": "res://addons/simplegrasstextured/images/normal.png"
-}
-sgt_motion_texture={
-"type": "sampler2D",
-"value": "res://addons/simplegrasstextured/images/motion.png"
-}
-sgt_wind_direction={
-"type": "vec3",
-"value": Vector3(1, 0, 0)
-}
-sgt_wind_movement={
-"type": "vec3",
-"value": Vector2(0, 0)
-}
-sgt_wind_strength={
-"type": "float",
-"value": 0.15
-}
-sgt_wind_turbulence={
-"type": "float",
-"value": 1.0
-}
-sgt_wind_pattern={
-"type": "sampler2D",
-"value": "res://addons/simplegrasstextured/images/wind_pattern.png"
-}

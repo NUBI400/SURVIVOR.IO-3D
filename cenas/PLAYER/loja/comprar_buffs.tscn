@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dpomnn2ujxqtx"]
 
 [ext_resource type="Theme" uid="uid://djby2hlfa2sq4" path="res://Material/Thema_UI_loja.tres" id="1_o7b2u"]
-[ext_resource type="Script" path="res://cenas/PLAYER/loja/comprar_buffs.gd" id="2_aoenv"]
+[ext_resource type="Script" uid="uid://c2ki74yylmbqd" path="res://cenas/PLAYER/loja/comprar_buffs.gd" id="2_aoenv"]
 
 [sub_resource type="Animation" id="Animation_lun17"]
 length = 0.001
@@ -36,8 +36,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hvsgf"]
 _data = {
-"RESET": SubResource("Animation_lun17"),
-"nao": SubResource("Animation_844r3")
+&"RESET": SubResource("Animation_lun17"),
+&"nao": SubResource("Animation_844r3")
 }
 
 [node name="comprar" type="Button"]

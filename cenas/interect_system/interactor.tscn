@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://mfv81q65hsph"]
 
-[ext_resource type="Script" path="res://scr/Interactot_system/interactor.gd" id="1_nundl"]
+[ext_resource type="Script" uid="uid://c4g0psyfyvgdm" path="res://scr/Interactot_system/interactor.gd" id="1_nundl"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gvrtq"]
 size = Vector3(0.269957, 0.292326, 2.25797)

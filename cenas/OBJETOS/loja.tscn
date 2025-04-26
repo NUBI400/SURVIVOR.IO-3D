@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://bej2unxx7vutf"]
 
-[ext_resource type="Script" path="res://scr/OBJETOS/loja.gd" id="1_pqcra"]
+[ext_resource type="Script" uid="uid://b0wlwx0ctqa4x" path="res://scr/OBJETOS/loja.gd" id="1_pqcra"]
 [ext_resource type="PackedScene" uid="uid://cc7ldkgurbhax" path="res://cenas/PLAYER/LOJA_UI.tscn" id="2_t816h"]
 [ext_resource type="PackedScene" uid="uid://dqy7sn3qq2e5" path="res://cenas/OBJETOS/caixabo2.tscn" id="3_jy8wn"]
 
@@ -52,8 +52,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_giu27"]
 _data = {
-"RESET": SubResource("Animation_jaw3e"),
-"aumentar": SubResource("Animation_8ki8q")
+&"RESET": SubResource("Animation_jaw3e"),
+&"aumentar": SubResource("Animation_8ki8q")
 }
 
 [node name="Loja" type="StaticBody3D"]
@@ -82,7 +82,7 @@ mesh = SubResource("CylinderMesh_4mpdu")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_giu27")
+&"": SubResource("AnimationLibrary_giu27")
 }
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("3_jy8wn")]

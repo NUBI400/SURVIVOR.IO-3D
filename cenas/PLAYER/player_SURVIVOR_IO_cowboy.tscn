@@ -1,19 +1,19 @@
 [gd_scene load_steps=92 format=4 uid="uid://bl6ro8suwqfup"]
 
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="2_go3nk"]
-[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/HUD.gd" id="3_htqeb"]
+[ext_resource type="Script" uid="uid://dgy6p5aex4s8c" path="res://scr/SCR COD ZOMBIES/HUD.gd" id="3_htqeb"]
 [ext_resource type="Texture2D" uid="uid://cov0e0mgya5xd" path="res://assets/receba.png" id="4_qsfah"]
 [ext_resource type="Texture2D" uid="uid://cd51o7ufskxfe" path="res://assets/pngwing.com.png" id="5_8nw60"]
 [ext_resource type="FontFile" uid="uid://c3ilng4crv551" path="res://assets/fonts/upheavtt.ttf" id="6_w78sj"]
-[ext_resource type="Script" path="res://scr/Player/UI/tempo.gd" id="7_bra86"]
-[ext_resource type="Script" path="res://scr/Player/UI/Debug_UI.gd" id="8_xcg5t"]
+[ext_resource type="Script" uid="uid://cyvygw4ohttp6" path="res://scr/Player/UI/tempo.gd" id="7_bra86"]
+[ext_resource type="Script" uid="uid://dk5yldet20ngq" path="res://scr/Player/UI/Debug_UI.gd" id="8_xcg5t"]
 [ext_resource type="Texture2D" uid="uid://dyegmmcplcwij" path="res://assets/HUD ASSETS/mira.png" id="9_w0wo2"]
 [ext_resource type="Texture2D" uid="uid://uidicgaojgdi" path="res://assets/HUD ASSETS/crosshair046.png" id="10_on80s"]
 [ext_resource type="Material" uid="uid://cpj0tcne0qshc" path="res://Material/shaders_scrs/motion_line_shaders/motion_line.tres" id="11_svdau"]
 [ext_resource type="Texture2D" uid="uid://dlg01e0xgd276" path="res://assets/Modelos/Cowboy/cowboy_0.png" id="12_va7fd"]
 [ext_resource type="PackedScene" uid="uid://b86vov4y0wslx" path="res://cenas/interect_system/player_interactor.tscn" id="16_efkq6"]
-[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/Survivor_Weapons_Manager.gd" id="17_h2ieq"]
-[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/weapon_resource.gd" id="18_qa26e"]
+[ext_resource type="Script" uid="uid://b68f1nd3rq0ei" path="res://scr/SCR COD ZOMBIES/Survivor_Weapons_Manager.gd" id="17_h2ieq"]
+[ext_resource type="Script" uid="uid://dj7t5d5po5kpt" path="res://scr/SCR COD ZOMBIES/weapon_resource.gd" id="18_qa26e"]
 [ext_resource type="Resource" uid="uid://wyublodn8rbe" path="res://scr/SCR COD ZOMBIES/weapon_resources/magnun.tres" id="19_b7d5p"]
 [ext_resource type="Resource" uid="uid://h1hucjlqci52" path="res://scr/SCR COD ZOMBIES/weapon_resources/MP7.tres" id="20_rjpmn"]
 [ext_resource type="Resource" uid="uid://s37bkx85cptx" path="res://scr/SCR COD ZOMBIES/weapon_resources/shotgun.tres" id="21_hv40x"]
@@ -264,8 +264,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_25c00"]
 _data = {
-"RESET": SubResource("Animation_hqybc"),
-"fade": SubResource("Animation_cryru")
+&"RESET": SubResource("Animation_hqybc"),
+&"fade": SubResource("Animation_cryru")
 }
 
 [sub_resource type="Shader" id="Shader_ygt1q"]
@@ -2091,10 +2091,10 @@ tracks/52/keys = PackedFloat32Array()
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_h3d7b"]
 _data = {
-"andando": SubResource("Animation_olp2s"),
-"andando_atirando": SubResource("Animation_1esnl"),
-"mixamo_com": SubResource("Animation_vcupf"),
-"parado": SubResource("Animation_outsw")
+&"andando": SubResource("Animation_olp2s"),
+&"andando_atirando": SubResource("Animation_1esnl"),
+&"mixamo_com": SubResource("Animation_vcupf"),
+&"parado": SubResource("Animation_outsw")
 }
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_51yfq"]
@@ -4115,37 +4115,37 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c545m"]
 _data = {
-"MP7 AIM OFF": SubResource("Animation_dejkm"),
-"MP7 AIM ON": SubResource("Animation_737at"),
-"MP7 AIM Shoot": SubResource("Animation_mnbnt"),
-"MP7 Activate": SubResource("Animation_6s6sj"),
-"MP7 Deactivate": SubResource("Animation_chegx"),
-"MP7 Drop_Anim": SubResource("Animation_gddif"),
-"MP7 Melee_Anim": SubResource("Animation_ia74b"),
-"MP7 OOA": SubResource("Animation_f0dy5"),
-"MP7 Reload": SubResource("Animation_4dneo"),
-"MP7 Shoot": SubResource("Animation_de3fj"),
-"Magnun AIM OFF": SubResource("Animation_7othi"),
-"Magnun AIM ON": SubResource("Animation_lghcv"),
-"Magnun AIM SHOOT": SubResource("Animation_xjhfj"),
-"Magnun Activate": SubResource("Animation_7ikkl"),
-"Magnun Deactivate": SubResource("Animation_44588"),
-"Magnun Drop_Anim": SubResource("Animation_4pfqh"),
-"Magnun Melee_Anim": SubResource("Animation_ik0qg"),
-"Magnun OOA": SubResource("Animation_ex3fn"),
-"Magnun Reload": SubResource("Animation_se6w0"),
-"Magnun Shoot": SubResource("Animation_i20tn"),
-"RESET": SubResource("Animation_wtmkg"),
-"Shotgun AIM OFF": SubResource("Animation_j4hft"),
-"Shotgun AIM ON": SubResource("Animation_qyppb"),
-"Shotgun AIM Shoot": SubResource("Animation_tlhsl"),
-"Shotgun Activate": SubResource("Animation_ss5me"),
-"Shotgun Deactivate": SubResource("Animation_5hbtp"),
-"Shotgun Drop_Anim": SubResource("Animation_grw6i"),
-"Shotgun Melee_Anim": SubResource("Animation_qkx2k"),
-"Shotgun OOA": SubResource("Animation_fefox"),
-"Shotgun Reload": SubResource("Animation_1yvms"),
-"Shotgun Shoot": SubResource("Animation_3foab")
+&"MP7 AIM OFF": SubResource("Animation_dejkm"),
+&"MP7 AIM ON": SubResource("Animation_737at"),
+&"MP7 AIM Shoot": SubResource("Animation_mnbnt"),
+&"MP7 Activate": SubResource("Animation_6s6sj"),
+&"MP7 Deactivate": SubResource("Animation_chegx"),
+&"MP7 Drop_Anim": SubResource("Animation_gddif"),
+&"MP7 Melee_Anim": SubResource("Animation_ia74b"),
+&"MP7 OOA": SubResource("Animation_f0dy5"),
+&"MP7 Reload": SubResource("Animation_4dneo"),
+&"MP7 Shoot": SubResource("Animation_de3fj"),
+&"Magnun AIM OFF": SubResource("Animation_7othi"),
+&"Magnun AIM ON": SubResource("Animation_lghcv"),
+&"Magnun AIM SHOOT": SubResource("Animation_xjhfj"),
+&"Magnun Activate": SubResource("Animation_7ikkl"),
+&"Magnun Deactivate": SubResource("Animation_44588"),
+&"Magnun Drop_Anim": SubResource("Animation_4pfqh"),
+&"Magnun Melee_Anim": SubResource("Animation_ik0qg"),
+&"Magnun OOA": SubResource("Animation_ex3fn"),
+&"Magnun Reload": SubResource("Animation_se6w0"),
+&"Magnun Shoot": SubResource("Animation_i20tn"),
+&"RESET": SubResource("Animation_wtmkg"),
+&"Shotgun AIM OFF": SubResource("Animation_j4hft"),
+&"Shotgun AIM ON": SubResource("Animation_qyppb"),
+&"Shotgun AIM Shoot": SubResource("Animation_tlhsl"),
+&"Shotgun Activate": SubResource("Animation_ss5me"),
+&"Shotgun Deactivate": SubResource("Animation_5hbtp"),
+&"Shotgun Drop_Anim": SubResource("Animation_grw6i"),
+&"Shotgun Melee_Anim": SubResource("Animation_qkx2k"),
+&"Shotgun OOA": SubResource("Animation_fefox"),
+&"Shotgun Reload": SubResource("Animation_1yvms"),
+&"Shotgun Shoot": SubResource("Animation_3foab")
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wglnm"]

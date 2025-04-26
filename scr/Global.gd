@@ -18,7 +18,7 @@ var ContagemInimigos = 1
 var Player_Pos = null
 
 
-var pontos = 1000
+var pontos = 0
 var preço_mp7 = 50
 var preço_revolver = 30
 var preço_shotgun = 70

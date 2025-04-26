@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bwnkppamadqpt"]
 
-[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/Projectiles/SURVIVOR_IO_Projectile.gd" id="1_7bhxk"]
+[ext_resource type="Script" uid="uid://djf13g7psjejg" path="res://scr/SCR COD ZOMBIES/Projectiles/SURVIVOR_IO_Projectile.gd" id="1_7bhxk"]
 [ext_resource type="PackedScene" uid="uid://g25e3hdxhd87" path="res://cenas/CENAS COD ZOMBIES/bullet.tscn" id="2_pg8lb"]
 
 [node name="Projectile" type="Node3D"]

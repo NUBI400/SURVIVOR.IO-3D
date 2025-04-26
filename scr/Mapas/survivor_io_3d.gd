@@ -67,7 +67,7 @@ func _physics_process(delta: float) -> void:
 func _on_timer_spawn_inimigo_timeout() -> void:
 	if Global.inimigos_ativos < Global.max_inimigos_ativos:
 		_spawn_enemy()
-		print(Global.inimigos_ativos)
+		#print(Global.inimigos_ativos)
 		Global.inimigos_ativos += 1 
 
 func _spawn_enemy():

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://drs6fe8opbuie"]
 
 [ext_resource type="Texture2D" uid="uid://uidicgaojgdi" path="res://assets/HUD ASSETS/crosshair046.png" id="1_bqvme"]
-[ext_resource type="Script" path="res://scr/SCR COD ZOMBIES/bullet_debug.gd" id="2_qxbxm"]
+[ext_resource type="Script" uid="uid://dk3fpcqjvyvgo" path="res://scr/SCR COD ZOMBIES/bullet_debug.gd" id="2_qxbxm"]
 
 [node name="bullet_debug" type="Sprite3D"]
 modulate = Color(1, 0.00784314, 0.0705882, 1)

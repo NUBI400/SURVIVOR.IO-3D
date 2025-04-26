@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://d03h4wsnjpeoe"]
 
 [ext_resource type="Theme" uid="uid://djby2hlfa2sq4" path="res://Material/Thema_UI_loja.tres" id="1_pjiec"]
-[ext_resource type="Script" path="res://cenas/PLAYER/loja/loja_arma.gd" id="2_1ps8k"]
+[ext_resource type="Script" uid="uid://dwsv58t5p64sh" path="res://cenas/PLAYER/loja/loja_arma.gd" id="2_1ps8k"]
 [ext_resource type="Texture2D" uid="uid://cnp664aiuxu10" path="res://assets/cadeado_branco.png" id="3_7odw2"]
 
 [sub_resource type="Animation" id="Animation_pm5h4"]
@@ -77,9 +77,9 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rjfda"]
 _data = {
-"RESET": SubResource("Animation_pm5h4"),
-"fade": SubResource("Animation_dveye"),
-"shake_and_flash": SubResource("Animation_e2c0e")
+&"RESET": SubResource("Animation_pm5h4"),
+&"fade": SubResource("Animation_dveye"),
+&"shake_and_flash": SubResource("Animation_e2c0e")
 }
 
 [node name="loja_arma" type="Button"]

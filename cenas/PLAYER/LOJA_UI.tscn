@@ -1,13 +1,13 @@
 [gd_scene load_steps=38 format=3 uid="uid://cc7ldkgurbhax"]
 
-[ext_resource type="Script" path="res://scr/Player/UI/Loja_UI.gd" id="1_nvb66"]
+[ext_resource type="Script" uid="uid://kfh67rpkrdw3" path="res://scr/Player/UI/Loja_UI.gd" id="1_nvb66"]
 [ext_resource type="Theme" uid="uid://djby2hlfa2sq4" path="res://Material/Thema_UI_loja.tres" id="2_klaag"]
-[ext_resource type="Shader" path="res://Material/LOJA_UI.gdshader" id="2_tagjp"]
+[ext_resource type="Shader" uid="uid://b6etlvjbwo7s5" path="res://Material/LOJA_UI.gdshader" id="2_tagjp"]
 [ext_resource type="FontFile" uid="uid://c3ilng4crv551" path="res://assets/fonts/upheavtt.ttf" id="3_76smo"]
 [ext_resource type="PackedScene" uid="uid://d03h4wsnjpeoe" path="res://cenas/PLAYER/loja/loja_arma.tscn" id="5_ep1h8"]
 [ext_resource type="PackedScene" uid="uid://dpomnn2ujxqtx" path="res://cenas/PLAYER/loja/comprar_buffs.tscn" id="6_j2xjt"]
-[ext_resource type="Script" path="res://cenas/PLAYER/loja/arma_visual.gd" id="6_w80o4"]
-[ext_resource type="Script" path="res://cenas/PLAYER/loja/upegrades.gd" id="7_gfdi6"]
+[ext_resource type="Script" uid="uid://wjidlvnmk5ve" path="res://cenas/PLAYER/loja/arma_visual.gd" id="6_w80o4"]
+[ext_resource type="Script" uid="uid://c7wae7v3ny1n8" path="res://cenas/PLAYER/loja/upegrades.gd" id="7_gfdi6"]
 
 [sub_resource type="Animation" id="Animation_rd10e"]
 length = 0.001
@@ -66,8 +66,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gsyov"]
 _data = {
-"RESET": SubResource("Animation_rd10e"),
-"blur": SubResource("Animation_vwhtq")
+&"RESET": SubResource("Animation_rd10e"),
+&"blur": SubResource("Animation_vwhtq")
 }
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_f42ob"]
